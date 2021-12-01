@@ -1,0 +1,101 @@
+/*
+ * Stylesheet with styles for the S componentubmitStuff
+ * Author: Rick Varella, http://runescape.salmoneus.net
+ * Date: 11 Feb 2011
+ */
+
+#ssReqsList ul.requirements {
+    margin: 10px 0;
+    padding: 0;
+    list-style-type: none;
+    border: 1px dashed #AF8252;
+    border-right: 0;
+    border-left: 0;
+}
+
+#ssReqsList ul.requirements > li {
+    padding: 3px 6px;
+    line-height: 25px;
+    font-size: 11px;
+}
+
+#ssReqsList ul.requirements > li div.menu {
+    display: none;
+    width: 300px;
+    float: right;
+    padding-right: 0;
+}
+
+#ssReqsList  ul.requirements > li:hover {
+    background: #CFAB81;
+}
+
+#ssReqsList ul.requirements > li:hover div.menu {
+    display: block;
+}
+
+#ssReqsList ul.requirements > li div.menu a {
+    float: right;
+    width: 50px;
+    line-height: 16px;
+}
+
+#ssItemRequirements .addRequirement {
+    position: relative;
+    float: left;
+    background-image: url(/web/20111229234655im_/http://runescape.salmoneus.net/assets/components/submitstuff/images/add.png);
+    width: auto;
+    margin-bottom: 2px;
+}
+
+#ssReqsList .editRequirement {
+    background-image: url(/web/20111229234655im_/http://runescape.salmoneus.net/assets/components/submitstuff/images/update.png);
+}
+
+#ssReqsList .removeRequirement {
+    background-image: url(/web/20111229234655im_/http://runescape.salmoneus.net/assets/components/submitstuff/images/remove.png);
+}
+
+#ssItemForm input.invalid,
+#ssItemForm select.invalid {
+    border: 1px solid #f00;
+}
+
+#ssItemForm div.itemInput {
+    width: 65%;
+    float: left;
+}
+
+#ssItemForm div.itemContent {
+    width: 35%;
+    float: left;
+}
+
+.submitContent {
+    float: right;
+}
+
+.contentCorrect {
+    background-image: url(/web/20111229234655im_/http://runescape.salmoneus.net/assets/components/submitstuff/images/correct.png);
+}
+/*
+     FILE ARCHIVED ON 23:46:55 Dec 29, 2011 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 19:36:33 Dec 01, 2021.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  captures_list: 183.357
+  exclusion.robots: 0.115
+  exclusion.robots.policy: 0.108
+  RedisCDXSource: 0.553
+  esindex: 0.009
+  LoadShardBlock: 150.836 (3)
+  PetaboxLoader3.datanode: 151.87 (4)
+  CDXLines.iter: 23.339 (3)
+  load_resource: 71.915
+  PetaboxLoader3.resolve: 42.822
+*/

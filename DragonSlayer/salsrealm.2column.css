@@ -1,0 +1,114 @@
+/*
+ * Stylesheet with styles specific to the two-column layout.
+ * Author: Salmoneus, http://runescape.salmoneus.net
+ * Date: 7 Feb 2011
+ */
+
+#contentRightBorder {
+    background: url(/web/20111229234654im_/http://runescape.salmoneus.net/assets/templates/salsrealm/images/layout/page_border_r.png) repeat-y right top;
+    width: 100%;
+}
+
+#columnContent {
+    left: 194px;
+    width: 200%;
+}
+
+#columnCenterWrap {
+    right: 194px;
+    float: right;
+    width: 50%;
+    padding: 0 0 0.5em 0;
+}
+
+#columnCenter {
+    position: relative;
+    right: 100%;
+    margin: 0 18px 0 202px;
+    overflow: hidden;
+}
+
+#columnLeft {
+    width: 194px;
+    right: 194px;
+}
+
+/* THIS ONE WORKS
+#contentRightBorder {
+    background: url(/web/20111229234654im_/http://runescape.salmoneus.net/assets/templates/salsrealm/images/layout/page_border_r.png) repeat-y right top;
+    width: 100%;
+}
+
+#columnContent {
+    left: 185px;
+    width: 200%;
+}
+
+#columnCenterWrap {
+    right: 200px;
+    float: right;
+    width: 50%;
+    padding: 0 0 0.5em 0;
+}
+
+#columnCenter {
+    position: relative;
+    right: 100%;
+    margin: 0 5px 0 215px;
+    overflow: hidden;
+}
+
+#columnLeft {
+    width: 190px;
+    right: 185px;
+}*/
+
+/* NOT WORKING
+#columns {
+    background: url(/web/20111229234654im_/http://runescape.salmoneus.net/assets/templates/salsrealm/images/layout/page_border_r.png) repeat-y right top;
+}
+
+#columnContent {
+    left: 186px;
+    width: 200%;
+}
+
+#columnCenterWrap {
+    right: 186px;
+    float: right;
+    width: 50%;
+    padding: 0 14px 1em 0;
+}
+
+#columnCenter {
+    position: relative;
+    right: 100%;
+    margin: 0 1px 0 215px;
+    overflow: hidden;
+}
+
+#columnLeft {
+    width: 196px;
+    right: 186px;
+}*/
+/*
+     FILE ARCHIVED ON 23:46:54 Dec 29, 2011 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 19:36:34 Dec 01, 2021.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  captures_list: 704.303
+  exclusion.robots: 0.083
+  exclusion.robots.policy: 0.076
+  RedisCDXSource: 0.714
+  esindex: 0.007
+  LoadShardBlock: 678.911 (3)
+  PetaboxLoader3.datanode: 701.77 (4)
+  CDXLines.iter: 18.341 (3)
+  load_resource: 349.986
+  PetaboxLoader3.resolve: 312.383
+*/

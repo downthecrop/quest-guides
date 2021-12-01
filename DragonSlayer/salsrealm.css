@@ -1,0 +1,2987 @@
+/*
+ * Stylesheet with global styles for Sal's Realm of RuneScape
+ * Author: Salmoneus and Neo Avatars
+ * http://runescape.salmoneus.net
+ * Date: 6 Sep 2011
+*/
+
+html,
+body {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    background: #143049 url(/web/20111118005309im_/http://runescape.salmoneus.net/assets/templates/salsrealm/images/layout/page_bg.jpg) repeat top left;
+    font-family: Verdana, Tahoma, Arial, Times, Serif;
+    font-size: 0.75em;
+}
+
+/* Generic element styles */
+
+h1 {
+    color: #5C3317;
+    text-align: center;
+    text-decoration: underline;
+    margin: 0.5em 0 0.25em 0;
+}
+
+h2 {
+    padding: 0 0 0.2em 0;
+    color: #7F4D17;
+    border-bottom: 2px solid #9d6c38;
+}
+
+h3 {
+    color: #5F3A12;
+}
+
+h4 {
+    color: #4F300F;
+}
+
+h5 {
+    color: #3F2408;
+    font-size: 1.2em;
+}
+
+p {
+    margin: 1em 0 1.15em 0;
+    padding: 0;
+    text-align: left;
+}
+
+dt {
+    font-weight: bold; 
+    margin: 15px 50px 5px 60px;
+}
+
+dt:before {
+    position: relative;
+    top: 13px;
+    content: "Q:";
+    font-size: 2.5em;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    margin-right: 7px;
+    margin-left: -54px;
+    padding: 0 8px 5px 8px;
+    color: #FFD87D;
+    background-color: #733D1A;
+    font-weight: normal;
+}
+
+dd {
+    margin: 25px 50px 0px 60px;
+    border-bottom: 1px solid #3F2408;
+    padding-bottom: 20px;
+    line-height: 150%;
+}
+
+dd:before {
+    position: relative;
+    top: 13px;
+    content: "A:";
+    font-size: 2.5em;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    margin-right: 7px;
+    margin-left: -54px;
+    padding: 0 9px;
+    color: #733D1A;
+    background-color: #FFD87D;
+}
+
+blockquote {
+    margin: 1em;
+    padding: 0 35px 5px 40px;
+    position: relative;
+    border-left: 3px solid #5F3A12;
+    background: url(/web/20111118005309im_/http://runescape.salmoneus.net/assets/templates/salsrealm/images/layout/quote.gif) no-repeat 5px 0;
+}
+
+blockquote p {
+    font-size: 12px;
+    color: #222;
+}
+
+blockquote .source {
+    font-size: 11px;
+    font-style: normal;
+    color: #000;
+    margin-top: 1.3em;
+    margin-bottom: 0.2em;
+}
+
+a,
+a:visited {
+    color: #57432B;
+    text-decoration: none;
+}
+
+a:hover {
+    /*color: #00266F;*/
+    color: #3F301D;
+    text-decoration: underline;
+}
+
+a img {
+    border: 0;
+}
+
+.hidden {
+    display: none;
+}
+
+/* Forms */
+
+form {
+    margin: 0 auto;
+    padding: 0;
+}
+
+form.classyForm {
+    background: #BD976A;
+    border: 3px double #381F04;
+    width: 600px;
+}
+
+form.donationForm {
+    width: 400px;
+}
+
+fieldset {
+    float: left;
+    clear: left;
+    border: 1px solid #7F5F27;
+    padding: 0;
+    margin: 1em 0;
+    width: 100%;
+    background: #D6AE84;
+    border-radius: 0.6em;
+    -moz-border-radius: 0.6em;
+    -o-border-radius: 0.6em;
+    -webkit-border-radius: 0.6em;
+}
+
+fieldset.submit {
+    float: none;
+    width: auto;
+    border: 0;
+    padding-left: 11.2em;
+    background: transparent;
+}
+
+fieldset legend {
+    margin-left: 1em;
+    font-weight: bold;
+    color: #7F4D17;
+    border: 1px solid #7F5F27;
+    background: #D6AE84;
+    padding: 2px;
+    border-radius: 0.6em;
+    -moz-border-radius: 0.6em;
+    -o-border-radius: 0.6em;
+    -webkit-border-radius: 0.6em;
+}
+
+fieldset.submit legend {
+    display: none;
+}
+
+fieldset p {
+    margin: 0.6em;
+    font-size: 11px;
+}
+
+fieldset.formColumn {
+    float: left;
+    width: auto;
+    border: 0;
+    width: 45%;
+}
+
+fieldset .center {
+    position: relative;
+    left: 50%;
+    float: left;
+}
+
+input,
+textarea,
+select {
+    margin-left: .2em;
+    margin-right: .2em;
+    border-color: #7F5F27;
+    color: #251B11;
+    border: 1px solid #AF8252;
+    background: #DFBC8C;
+    float: left;
+    font-size: 12px;
+}
+
+form.donationForm input,
+form.donationForm textarea,
+form.donationForm select{
+    font-size: 1.6em;
+    font-weight: bold;
+    height: 1.6em;
+    line-height: 1.6em;
+}
+
+span.donationCurrency {
+    position: absolute;
+    left: 6em;
+    font-size: 1.4em;
+    font-weight: bold;
+    color: #444;
+    float: left;
+    line-height: 1.8em;
+}
+
+form.donationForm input[type="text"] {
+    width: 200px;
+}
+
+form.donationForm input#donationAmount {
+    padding-left: 15px;
+    width: 185px;
+}
+
+form.donationForm input#donationButton {
+    background: transparent;
+    border: 0;
+    width: 147px;
+    height: 47px;
+}
+
+input.focused,
+textarea.focused {
+    background-color: #CFAB81;
+    border-color: #7F5F27;
+}
+
+input.error,
+textarea.error,
+select.error {
+    border: 1px solid #c00;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+    border: 0;
+    background: transparent;
+}
+
+input[type="checkbox"].left {
+    margin-left: 1em;
+}
+
+.button,
+.buttonLong,
+.buttonMedium,
+.buttonMega,
+.buttonMediumSmall,
+.buttonSmall,
+.buttonTiny,
+.buttonVeryLong {
+    width: 98px;
+    height: 21px;
+    cursor: pointer;
+    border: 0;
+    padding: 0;
+    background: url(/web/20111118005309im_/http://runescape.salmoneus.net/assets/templates/salsrealm/images/layout/button_medium.png) no-repeat top left;
+    color: #FFEEB7;
+    font-weight: bold;
+}
+
+.buttonTiny {
+    width: 27px;
+    background-image: url(/web/20111118005309im_/http://runescape.salmoneus.net/assets/templates/salsrealm/images/layout/button_tiny.png);
+}
+
+.buttonSmall {
+    width: 40px;
+    background-image: url(/web/20111118005309im_/http://runescape.salmoneus.net/assets/templates/salsrealm/images/layout/button_small.png);
+}
+
+.buttonMediumSmall {
+    width: 72px;
+    background-image: url(/web/20111118005309im_/http://runescape.salmoneus.net/assets/templates/salsrealm/images/layout/button_msmall.png);
+}
+
+.buttonLong {
+    width: 152px;
+    background-image: url(/web/20111118005309im_/http://runescape.salmoneus.net/assets/templates/salsrealm/images/layout/button_long.png);
+}
+
+.buttonVeryLong {
+    width: 207px;
+    background-image: url(/web/20111118005309im_/http://runescape.salmoneus.net/assets/templates/salsrealm/images/layout/button_vlong.png);
+}
+
+.buttonMega {
+    width: 290px;
+    background-image: url(/web/20111118005309im_/http://runescape.salmoneus.net/assets/templates/salsrealm/images/layout/button_mega.png);
+}
+
+.button:hover,
+.buttonLong:hover,
+.buttonMega:hover,
+.buttonMediumSmall:hover,
+.buttonSmall:hover,
+.buttonTiny:hover,
+.buttonVeryLong:hover {
+    background-position: bottom left;
+}
+
+fieldset div.field,
+fieldset div.fieldBottom {
+    position: relative;
+    padding: 0.5em 0;
+    margin: 0;
+    font-size: 11px;
+    float: left;
+    clear: left;
+    width: 100%;
+    border-bottom: 1px dashed #AF8252;
+    min-height: 22px;
+    line-height: 22px;
+}
+
+fieldset div.fieldBottom,
+fieldset.submit div.field {
+    border: 0;
+}
+
+form.donationForm .field {
+    border: 0;
+}
+
+label {
+    display: block;
+    float: left;
+    padding: 0;
+    margin: .2em 0.8em 0 0.8em;
+    text-align: left;
+    font-size: 11px;
+    width: 10em;
+}
+
+label.indent {
+    margin-left: 11.8em;
+}
+
+label.required {
+    font-weight: bold;
+}
+
+label.required:after {
+    content: "*";
+}
+
+label.mini {
+    width: 6em;
+    margin-right: 1em;
+}
+
+label.staticField {
+    width: auto;
+}
+
+#recaptcha_area {
+    margin-left: 11.8em;
+}
+
+#outdatedBrowserBar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #CD0000;
+    border: 2px solid #800000;
+    z-index: 2000;
+}
+
+#outdatedBrowserBar p.content {
+    color: #FFF;
+    font-size: 11px;
+    text-align:center;
+    margin: 3px 114px 3px 1px;
+}
+
+#outdatedBrowserBar div.browserLogos {
+    width: 104px;
+    height: 32px;
+    float: right;
+    margin: 0 6px 0 3px;
+}
+
+#pageOuter {
+    position: relative;
+    min-width: 1000px;
+}
+
+/* Borders for the outer edge of the page */
+
+div.topBorder {
+    background: url(/web/20111118005309im_/http://runescape.salmoneus.net/assets/templates/salsrealm/images/layout/page_border_t.png) repeat-x top left;
+    height: 8px;
+    width: 100%;
+    font-size: 2px;
+}
+
+div.topBorderLeft {
+    background: url(/web/20111118005309im_/http://runescape.salmoneus.net/assets/templates/salsrealm/images/layout/page_corner_tl.png) no-repeat top left;
+    height: 8px;
+    width: 100%;
+    float: left;
+}
+
+div.topBorderRight {
+    background: url(/web/20111118005309im_/http://runescape.salmoneus.net/assets/templates/salsrealm/images/layout/page_corner_tr.png) no-repeat top right;
+    height: 8px;
+    width: 100%;
+    float: left;
+}
+
+div.boxOuter {
+    background: #2B2318 url(/web/20111118005309im_/http://runescape.salmoneus.net/assets/templates/salsrealm/images/layout/page_border_l.png) repeat-y top left;
+    padding: 0 0 0 8px;
+    height: 100%;
+}
+
+div.boxInner {
+    background: url(/web/20111118005309im_/http://runescape.salmoneus.net/assets/templates/salsrealm/images/layout/page_border_r.png) repeat-y top right;
+    padding: 0 8px 0 0;
+    height: 100%;
+}
+
+/* Site banner and search */
+
+div.banner {
+    background: #0D1721 url(/web/20111118005309im_/http://runescape.salmoneus.net/assets/templates/salsrealm/images/layout/realm_banner.jpg) no-repeat;
+    height: 128px;
+}
+
+.banner .homeLink {
+    display: block;
+    height: 128px;
+    width: 400px;
+    float: left;
+}
+
+.homeLink strong {
+    display: none;
+}
+
+div.bannerBottom {
+    background: #2B2318 url(/web/20111118005309im_/http://runescape.salmoneus.net/assets/templates/salsrealm/images/layout/head_border_b.png) repeat-x bottom left;
+    height: 29px;
+}
+
+/* Site Search */
+
+.siteSearch {
+    background: url(/web/20111118005309im_/http://runescape.salmoneus.net/assets/templates/salsrealm/images/layout/search_bg_8bit.png) no-repeat;
+    position: relative;
+    width: 253px;
+    height: 50px;
+    top: 85px;
+    right: 60px;
+    float: right;
+}
+
+.siteSearch input {
+    background: transparent none repeat scroll 0% 50%;
+    border: 0;
+    color: #251B11;
+}
+
+input.siteSearchInput {
+    position: relative;
+    top: 28px;
+    left: 29px;
+    width: 171px;
+    height: 19px;
+    margin: 0;
+    font-weight: bold;
+}
+
+input.siteSearchButton {
+    position: relative;
+    left: 34px;
+    top: 29px;
+    width: 27px;
+    height: 19px;
+    cursor: pointer;
+}
+
+input.siteSearchButton:hover {
+    background: url(/web/20111118005309im_/http://runescape.salmoneus.net/assets/templates/salsrealm/images/layout/search_go_bright.png) no-repeat bottom left;
+}
+
+/* Global layout */
+
+#header {
+    float: left;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+#columns {
+    clear: both;
+    width: 100%;
+    overflow: hidden;
+}
+
+#columns,
+#columnMid,
+#columnContent,
+#columnCenterWrap,
+#columnMid,
+#columnLeft,
+#columnRight {
+    position: relative;
+    float: left;
+}
+
+/* Navigation styles */
+
+.columnPanel {
+    background: #F7D3A6;
+    border: 1px solid #000;
+    padding: 0;
+    margin: 0;
+}
+
+.columnPanel {
+    font-size: 0.9em;
+}
+
+.columnPanel ul {
+    border: 0;
+    padding: 0;
+    margin: 0;
+}
+
+.columnPanel ul li {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.columnPanel ul.sideNav {
+    margin-left: 16px;
+    padding: 4px 0 4px 6px;
+    list-style: square;
+    color: #333;
+}
+
+.columnPanel ul.sideNav li {
+    list-style: square;
+}
+
+ul.nav li {
+    display: block;
+    border-top: 1px solid #deb98e;
+    width: 100%;
+    line-height: 16px;
+}
+
+ul.nav li a {
+    display: block;
+    padding: 0 1px 0 3px;
+}
+
+ul.nav li a.parent {
+    width: 154px;
+    float: left;
+}
+
+ul.nav li a:hover {
+    text-decoration: none;
+}
+
+ul.nav li:hover {
+    background-color: #E0BC90;
+}
+
+ul.nav li:first-child {
+    border: 0;
+}
+
+ul.nav li .navHandle {
+    display: block;
+    float: left;
+    margin: 2px 2px 0 0;
+    cursor: pointer;
+    width: 13px;
+    height: 13px;
+}
+
+ul.nav li.loading {
+    background-position: right center;
+}
+
+ul.nav li ul {
+    display: none;
+    border-top: 1px solid #C8A27D;
+    margin: 0;
+    padding: 0;
+    background: #EBC79A;
+}
+
+ul.nav li ul li:hover {
+    background: #D4B084;
+}
+
+ul.nav li ul li:last-child {
+    border-bottom: 0;
+}
+
+ul.nav li ul li a {
+    padding: 0 0 0 18px;
+}
+
+ul.nav li ul li a,
+ul.nav li ul li a:visited,
+ul.nav li ul li a:hover {
+    background-position: center left;
+    background-repeat: no-repeat;
+}
+
+ul.nav li ul li.p2p a,
+.memberIcon {
+    background-image: url(/web/20111118005309im_/http://runescape.salmoneus.net/assets/templates/salsrealm/images/layout/nav_members.png);
+}
+
+ul.nav li ul li.f2p a,
+.freeplayIcon {
+    background-image: url(/web/20111118005309im_/http://runescape.salmoneus.net/assets/templates/salsrealm/images/layout/nav_free.png);
+}
+
+.memberIcon,
+.freeplayIcon {
+    display: block;
+    width: 14px;
+    height: 11px;
+}
+
+.showExtra,
+.hideExtra,
+.emptyHeading {
+    display: block;
+    width: 13px;
+    height: 13px;
+    background: url(/web/20111118005309im_/http://runescape.salmoneus.net/assets/templates/salsrealm/images/layout/nav_showhide.png) no-repeat right top;
+    margin: 2px 2px 0 0;
+    cursor: pointer;
+}
+
+.hideExtra {
+    background-position: top left;
+}
+
+.showExtra:hover {
+    background-position: bottom right;
+}
+
+.hideExtra:hover {
+    background-position: bottom left;
+}
+
+.navHandle b {
+    display: none;
+}
+
+div.spacerTop {
+    background:url(/web/20111118005309im_/http://runescape.salmoneus.net/assets/templates/salsrealm/images/layout/nav_header.png) repeat-x left top;
+    height: 7px;
+    width: 100%;
+    overflow: hidden;
+    font-size: 2px;
+}
+
+div.sideColumn h2 {
+    background: #70644E url(/web/20111118005309im_/http://runescape.salmoneus.net/assets/templates/salsrealm/images/layout/nav_header.png) repeat-x 0% -7px;
+    height: 24px;
+    line-height: 24px;
+    font-weight: bold;
+    font-size: 14px;
+    border: 1px solid #000;
+    text-align: center;
+    color: #FFE7A2;
+    margin: 0;
+    padding: 0;
+}
+
+div.spacerBottom {
+    background:url(/web/20111118005309im_/http://runescape.salmoneus.net/assets/templates/salsrealm/images/layout/nav_header.png) repeat-x 0% -31px;
+    height: 7px;
+    width: 100%;
+    font-size: 2px;
+    overflow: hidden;
+}
+
+div.sideColumn .rightBorder {
+    background: transparent url(/web/20111118005309im_/http://runescape.salmoneus.net/assets/templates/salsrealm/images/layout/nav_bg_sides.png) repeat-y right top;
+    padding: 0 8px 0 0;
+}
+
+div.sideColumn .leftBorder {
+    background: url(/web/20111118005309im_/http://runescape.salmoneus.net/assets/templates/salsrealm/images/layout/nav_bg_sides.png) repeat-y left top;
+    padding: 0 0 0 8px;
+    height: 100%
+}
+
+/* Rounded corners for the side column footers */
+
+.sideColumn .columnFooter,
+.columnFooter .footerCenter,
+.columnFooter .cornerFooterLeft,
+.columnFooter .cornerFooterRight{
+    height:5px;
+    font-size: 2px;
+    overflow: hidden;
+}
+
+.columnFooter .footerCenter {
+    margin: 0 10px;
+    background: url(/web/20111118005309im_/http://runescape.salmoneus.net/assets/templates/salsrealm/images/layout/nav_bg_bottom.png) repeat-x left top;
+}
+
+.columnFooter .cornerFooterRight {
+    background: url(/web/20111118005309im_/http://runescape.salmoneus.net/assets/templates/salsrealm/images/layout/nav_bg_bottom.png) no-repeat 100% -6px;
+}
+
+.columnFooter .cornerFooterLeft {
+    background: url(/web/20111118005309im_/http://runescape.salmoneus.net/assets/templates/salsrealm/images/layout/nav_bg_bottom.png) no-repeat 0 -12px;
+}
+
+/*Scroll for the content / footer*/
+
+.columnCenter .scrollFooter,
+.scrollFooter .scrollFooterCenter,
+.scrollFooter .scrollFooterLeft,
+.scrollFooter .scrollFooterRight,
+.columnCenter .scrollHeader,
+.scrollHeader .scrollHeaderCenter,
+.scrollHeader .scrollHeaderLeft,
+.scrollHeader .scrollHeaderRight{
+    height: 8px;
+    font-size: 2px;
+    overflow: hidden;
+}
+
+.scrollFooter .scrollFooterCenter,
+.scrollHeader .scrollHeaderCenter {
+    margin: 0 8px;
+    background: url(/web/20111118005309im_/http://runescape.salmoneus.net/assets/templates/salsrealm/images/layout/scroll_edges_tb.png) repeat-x left bottom;
+}
+
+.scrollHeader .scrollHeaderCenter {
+    background-position: left top;
+}
+
+.scrollFooter .scrollFooterLeft,
+.scrollFooter .scrollFooterRight,
+.scrollHeader .scrollHeaderLeft,
+.scrollHeader .scrollHeaderRight {
+    background: url(/web/20111118005309im_/http://runescape.salmoneus.net/assets/templates/salsrealm/images/layout/scroll_corners.png) no-repeat left bottom;
+}
+
+.scrollFooter .scrollFooterRight {
+    background-position: right bottom;
+}
+
+.scrollHeader .scrollHeaderLeft {
+    background-position: left top;
+}
+
+.scrollHeader .scrollHeaderRight {
+    background-position: right top;
+}
+
+.contentOuter {
+    padding: 0 0 0 8px;
+    background: url(/web/20111118005309im_/http://runescape.salmoneus.net/assets/templates/salsrealm/images/layout/scroll_edges_lr.png) repeat-y left top;
+    height: 100%;
+}
+
+.contentInner {
+    padding: 0 8px 0 0;
+    background: url(/web/20111118005309im_/http://runescape.salmoneus.net/assets/templates/salsrealm/images/layout/scroll_edges_lr.png) repeat-y right top;
+    height: 100%;
+}
+
+#content,
+#footer {
+    background: #D9B992 url(/web/20111118005309im_/http://runescape.salmoneus.net/assets/templates/salsrealm/images/layout/scroll_bg.jpg) repeat left top;
+    height: 100%;
+    padding: 0.5em;
+    margin: 0;
+    overflow: hidden;
+}
+
+.author,
+.contributors,
+.previousAuthors {
+    text-align:center;
+}
+
+.contentMenu {
+    border-bottom: 1px solid #CA9D6D;
+    padding: 0 0 2px 0;
+    margin: 0 0 3px 0;
+    line-height: 29px;
+}
+
+.contentDetails {
+    border-bottom: 1px solid #CA9D6D;
+    padding: 0 0 2px 0;
+    margin: 0 0 .8em 0;
+    font-size: 11px;
+    color: #222;
+}
+
+#pageUpdateInfo {
+    border-top: 1px solid #CA9D6D;
+    font-size: 11px;
+    margin: 4px 0;
+    padding: 4px 0 0 0;
+}
+
+/* Top user menu */
+#userMenu {
+    position: relative;
+    float: right;
+    padding: 0;
+    margin: 0;
+    width: auto;
+    line-height: 100%;
+    z-index: 1000;
+}
+
+#userMenu li {
+    margin: 0 5px;
+    padding: 0 0 .3em 0;
+    float: right;
+    position: relative;
+    list-style: none;
+    border-radius: 0.6em;
+    -moz-border-radius: 0.6em;
+    -o-border-radius: 0.6em;
+    -webkit-border-radius: 0.6em;
+}
+
+#userMenu a {
+    font-weight: bold;
+    background-color: #DFBC8C;
+    background-repeat: no-repeat;
+    background-position: 2px 50%;
+    border: 1px solid #7F5F27;
+    font-size: .9em;
+    color: #4F2F0C;
+    text-decoration: none;
+    display: block;
+    padding: 6px 15px 6px 22px;
+    margin: 0;
+    border-radius: 0.6em;
+    -moz-border-radius: 0.6em;
+    -o-border-radius: 0.6em;
+    -webkit-border-radius: 0.6em;
+}
+
+#userMenu a:hover {
+    background-color: #CFAB81;
+    color: #3c240b;
+}
+
+#userMenu li:hover > a {
+    background-color: #CFAB81;
+    color: #3c240b;
+}
+
+#userMenu ul li:hover a,
+#userMenu li:hover li a {
+    border: 0;
+}
+
+#userMenu ul a:hover {
+    color: #3c240b;
+    border-radius: 0;
+    -moz-border-radius: 0;
+    -o-border-radius: 0;
+    -webkit-border-radius: 0;
+}
+
+#userMenu li:hover > ul {
+    display: block;
+}
+
+#userMenu ul {
+    display: none;
+    margin: 0;
+    padding: 0;
+    width: 150px;
+    position: absolute;
+    top: 28px;
+    right: 0;
+    background-color: #DFBC8C;
+    border: 1px solid #7F5F27;
+    border-radius: 0.6em;
+    -moz-border-radius: 0.6em;
+    -o-border-radius: 0.6em;
+    -webkit-border-radius: 0.6em;
+
+}
+#userMenu ul li {
+    float: none;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+#userMenu ul a {
+    font-weight: normal;
+    padding-bottom: 8px;
+}
+
+#userMenu ul ul {
+    left: 181px;
+    top: -3px;
+}
+
+#userMenu ul li:first-child > a {
+    border-top-left-radius: 0.6em;
+    border-top-right-radius: 0.6em;
+    -webkit-border-top-left-radius: 0.6em;
+    -moz-border-radius-topleft: 0.6em;
+    -webkit-border-top-right-radius: 0.6em;
+    -moz-border-radius-topright: 0.6em;
+}
+#userMenu ul li:last-child > a {
+    border-bottom-left-radius: 0.6em;
+    border-bottom-right-radius: 0.6em;
+    -webkit-border-bottom-left-radius: .6em;
+    -moz-border-radius-bottomleft: .6em;
+    -webkit-border-bottom-right-radius: .6em;
+    -moz-border-radius-bottomright: .6em;
+}
+
+#userMenu:after {
+    content: ".";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    line-height: 0;
+    height: 0;
+}
+#userMenu {
+    display: inline-block;
+}
+html[xmlns] #userMenu {
+    display: block;
+}
+
+* html #userMenu {
+    height: 1%;
+}
+
+.userOptions {
+    background-image: url(/web/20111118005309im_/http://runescape.salmoneus.net/assets/templates/salsrealm/images/icons/16x16/gear.png);
+}
+
+.updateResource {
+    background-image: url(/web/20111118005309im_/http://runescape.salmoneus.net/assets/templates/salsrealm/images/icons/16x16/update.png);
+}
+
+.userHighscores {
+    background-image: url(/web/20111118005309im_/http://runescape.salmoneus.net/assets/templates/salsrealm/images/icons/16x16/chart.png);
+}
+
+/* Breadcrumbs */
+ul.breadcrumbs,
+ul.breadcrumbs li {
+    position: relative;
+    float: left;
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    width: auto;
+    height: 26px;
+    line-height: 26px;
+}
+
+.breadcrumbs {
+    height: 2em;
+    line-height: 2em;
+    
+}
+
+.breadcrumbs li {
+    padding-left: 0.75em;
+    font-size: 0.85em;
+    color: #222;
+    width: auto;
+}
+
+.breadcrumbs li a {
+    display: block;
+    padding: 0 15px 0 5px;
+    height: 26px;
+    width: auto;
+    float: left;
+    background: url(/web/20111118005309im_/http://runescape.salmoneus.net/assets/templates/salsrealm/images/icons/12x12/arrow_right_brown.png) no-repeat right center;
+}
+
+.breadcrumbs li.last a {
+    background: none;
+    padding: 0;
+}
+
+.breadcrumbs li.last {
+    padding: 0 15px 0 5px;
+}
+
+.breadcrumbs li.home img {
+    margin: 5px 0 0 0;
+    padding: 0;
+}
+
+/*Footer*/
+
+#siteCredits {
+    font-size: 10px;
+    text-align: center;
+    margin: 4px 0;
+    padding: 4px 0 0 0;
+    border-top: 1px solid #CA9D6D;
+    color: #222;
+}
+
+#pageFooter {
+    margin: 0.2em 0 0 0;
+}
+
+#pageFooter .column {
+    width: 155px;
+    float: left;
+}
+
+#pageFooter .columnAward {
+    width: 100px;
+    float: left;
+}
+
+#pageFooter .column h4 {
+    font-size: 14px;
+    margin: 4px 0 8px 0;
+}
+
+ul.footerNav {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+ul.footerNav li {
+    margin: 0 0 4px 0;
+    font-size: 10px;
+    height: 16px;
+}
+
+ul.footerNav li a {
+    display: block;
+}
+
+ul.footerNav li a:hover {
+    color: #57432B;
+}
+
+.footerSpacer {
+    height: 4px;
+}
+
+a.iconLink {
+    padding: 0 0 0 20px;
+    background-repeat: no-repeat;
+    background-position: left center;
+    height: 16px;
+    line-height: 16px;
+}
+
+a.twitterFollow {
+    background-image: url(/web/20111118005309im_/http://runescape.salmoneus.net/assets/templates/salsrealm/images/icons/16x16/twitter.png);
+}
+
+a.facebookLike {
+    background-image: url(/web/20111118005309im_/http://runescape.salmoneus.net/assets/templates/salsrealm/images/icons/16x16/facebook.png);
+}
+
+a.feedAdd {
+    background-image: url(/web/20111118005309im_/http://runescape.salmoneus.net/assets/templates/salsrealm/images/icons/16x16/feed.png);
+}
+
+a.contactUs {
+    background-image: url(/web/20111118005309im_/http://runescape.salmoneus.net/assets/templates/salsrealm/images/icons/16x16/email.png);
+}
+
+/*Latest News stuff for homepage*/
+
+.headlines {
+    width: 564px;
+    height: 180px;
+    text-align: center;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.headlines .newsContainer {
+    border: 1px solid #b19879;
+    background: #DCBA94;
+    height: 120px;
+    margin: 4px;
+}
+
+.headlines .forumUpdates,
+.headlines .rsUpdates {
+    float: left;
+    width: 255px;
+}
+
+.headlines ul {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    border-top: 0;
+}
+
+.headlines li {
+    text-align: left;
+    list-style-type: none;
+    height: 30px;
+    overflow: hidden;
+    font-size: 11px;
+    background: #F7D3A6;
+    border-top: 1px solid #CA9D6D;
+    padding-left: 4px;
+    margin: 0;
+}
+
+.headlines li .publishDate {
+    color: #333;
+}
+
+.headlines h3 {
+    background: #E9C7A1 url(/web/20111118005309im_/http://runescape.salmoneus.net/assets/templates/salsrealm/images/layout/headline_header.png);
+    line-height: 27px;
+    font-weight: bold;
+    font-size: 14px;
+    color: #251B11;
+    width: 100%;
+    border: 0;
+    margin: 0;
+}
+
+.headlines .spacer {
+    float: left;
+    margin: 0;
+    width: 10px;
+    height: 100%;
+}
+
+.headlines ul li .title {
+    font-weight: bold;
+}
+
+.headlines .feedInit {
+    height: 63px;
+    padding: 30px 0 0 0;
+    background: #F7D3A6;
+    border-top: 1px solid #CA9D6D;
+    border-bottom: 1px solid #CA9D6D;
+}
+
+.headlines noscript p,
+.columnPanel noscript p,
+.feedInit p {
+    font-size: 10px;
+    text-align: center;
+    color: #251B11;
+    font-weight: bold;
+}
+
+.headlines .loading {
+    height: 32px;
+}
+
+.newsBoxOuter {
+    padding: 26px 22px;
+}
+
+.newsBoxInner {
+    width: 100%;
+    height: 130px;
+    padding: 0;
+    background: url(/web/20111118005309im_/http://runescape.salmoneus.net/assets/templates/salsrealm/images/layout/headline_separator.png) repeat-y center;
+}
+
+.newsTop {
+    background: url(/web/20111118005309im_/http://runescape.salmoneus.net/assets/templates/salsrealm/images/layout/headline_t.png) no-repeat 40px 19px;
+}
+
+.newsBottom {
+    background: url(/web/20111118005309im_/http://runescape.salmoneus.net/assets/templates/salsrealm/images/layout/headline_b.png) no-repeat bottom center;
+}
+
+.newsLeft {
+    background: url(/web/20111118005309im_/http://runescape.salmoneus.net/assets/templates/salsrealm/images/layout/headline_l.png) no-repeat 15px 40px;
+}
+
+.newsRight {
+    background: url(/web/20111118005309im_/http://runescape.salmoneus.net/assets/templates/salsrealm/images/layout/headline_r.png) no-repeat right center;
+}
+
+.newsTopLeft {
+    background: url(/web/20111118005309im_/http://runescape.salmoneus.net/assets/templates/salsrealm/images/layout/headline_tl.png) no-repeat left top;
+}
+
+.newsTopRight {
+    background: url(/web/20111118005309im_/http://runescape.salmoneus.net/assets/templates/salsrealm/images/layout/headline_tr.png) no-repeat right top;
+}
+
+.newsBottomLeft {
+    background: url(/web/20111118005309im_/http://runescape.salmoneus.net/assets/templates/salsrealm/images/layout/headline_bl.png) no-repeat left bottom;
+    height: 182px;
+}
+
+.newsBottomRight {
+    background: url(/web/20111118005309im_/http://runescape.salmoneus.net/assets/templates/salsrealm/images/layout/headline_br.png) no-repeat right bottom;
+    height: 182px;
+    padding: 0;
+}
+
+/* Website news post styles */
+
+.sitePost {
+    padding: 10px 0 10px 0;
+    width: 98%;
+    position: static;
+    text-align: center;
+    margin: auto;
+}
+
+.sitePost h2 {
+    height: 28px;
+    line-height: 28px;
+    background: #CAA378 url(/web/20111118005309im_/http://runescape.salmoneus.net/assets/templates/salsrealm/images/layout/post_header.png) no-repeat;
+    padding: 0 8px;
+    margin: 0;
+    border: 1px solid #A99174;
+    border-bottom: 0;
+    font-size: 1.2em;
+    text-align: left;
+    border-top-left-radius: 0.6em;
+    border-top-right-radius: 0.6em;
+    -webkit-border-top-left-radius: 0.6em;
+    -moz-border-radius-topleft: 0.6em;
+    -webkit-border-top-right-radius: 0.6em;
+    -moz-border-radius-topright: 0.6em;
+}
+
+.sitePost h2 a {
+    color: #251B11;
+}
+
+.sitePost .postTime {
+    display: block;
+    color: #333;
+    margin: 1em;
+    font-size: 0.9em;
+}
+
+.sitePost .postAuthor {
+    color: #111;
+}
+
+.sitePost .postContent {
+    border: 1px solid #A99174;
+    background: #e4c298;
+    font-size: 11px;
+    text-align: left;
+    border-bottom-left-radius: 0.6em;
+    border-bottom-right-radius: 0.6em;
+    -webkit-border-bottom-left-radius: 0.6em;
+    -moz-border-radius-bottomleft: 0.6em;
+    -webkit-border-bottom-right-radius: 0.6em;
+    -moz-border-radius-bottomright: 0.6em;
+}
+
+.sitePost p {
+    margin: 1em;
+}
+
+.postMeta {
+    padding: 4px;
+    color: #222;
+    background: #ddbb97;
+    border: 1px solid #b19879;
+    border-radius: 0.3em;
+    -moz-border-radius: 0.3em;
+    -o-border-radius: 0.3em;
+    -webkit-border-radius: 0.3em;
+}
+
+.blogPost .postDetails {
+    font-size: 11px;
+    color: #222;
+    margin-top: 0.5em;
+}
+
+.blogPost .postMeta {
+    padding: 4px;
+    color: #222;
+    background: transparent;
+    border: 1px solid #CA9D6D;
+    font-size: 11px;
+}
+
+.blogPost .postEntry {
+    margin: 1.4em 0;
+}
+
+.pollSubmitTable {
+    margin: 0 auto;
+    text-align: center;
+}
+
+/* Twitter styles */
+
+#feedContainer {
+    font-size: 9px;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+#feedContainer {
+    display: block;
+    padding: 0;
+    margin: 0;
+}
+
+#feedContainer .feedTitle {
+    display: block;
+    font-weight: bold;
+    text-align: center;
+    padding: 3px 0;
+    background: #E0BC90;
+    color: #50290F;
+}
+
+#feedContainer .publishDate,
+#feedContainer .publishDate a {
+    color: #7F4D17;
+}
+
+#feedContainer .feedGroup {
+    padding: 0;
+    margin: 0;
+    border-top: 1px dashed #CA9D6D;
+}
+
+#feedContainer .feedGroup:first-child {
+    border-top: 0;
+}
+
+#feedContainer .feedGroup .feedEntry {
+    border: 0;
+    list-style: none;
+    overflow: auto;
+    padding: 0 4px;
+}
+
+#feedContainer .feedInit {
+    height: 50px;
+    margin: 20px 0 0 0;
+}
+
+#feedContainer .feedInit .loading {
+    height: 16px;
+}
+
+#feedContainer .feedEntries {
+    border-top: 1px dashed #CA9D6D;
+}
+
+#feedContainer .more {
+    text-align: center;
+    display: block;
+    margin: 2px 0;
+}
+
+/* Page credits */
+div.credits {
+    font-weight: bold;
+    text-align: center;
+}
+
+/* Social Media Bar */
+
+.socialMediaBar {
+    width: 250px;
+    height: 16px;
+    padding: 2px;
+    margin: 1em 0 1.1em 0;
+}
+
+.socialMediaBar .socialButton {
+    float: left;
+    width: 16px;
+    height: 16px;
+    margin: 0 4px;
+}
+
+.socialMediaBar .gplusone {
+    width: 70px;
+    padding-top: 1px;
+}
+
+/* TOC */
+
+.toc {
+    width: 300px;
+    border: 1px solid #7F4D17;
+    background: #E2BC93 url(/web/20111118005309im_/http://runescape.salmoneus.net/assets/templates/salsrealm/images/layout/toc_bg.png) repeat-x top left;
+    border-radius: 0.6em;
+    -moz-border-radius: 0.6em;
+    -o-border-radius: 0.6em;
+    -webkit-border-radius: 0.6em;
+    float: left;
+}
+
+.toc h3 {
+    background: #CAA378 url(/web/20111118005309im_/http://runescape.salmoneus.net/assets/templates/salsrealm/images/layout/toc_header.png) no-repeat;
+    border-bottom: 1px solid #7F4D17;
+    text-align: center;
+    font-size: 14px;
+    height: 20px;
+    color: #3F2408;
+    margin: 0;
+    padding: 2px 0 0 0;
+    border-top-left-radius: 0.6em;
+    border-top-right-radius: 0.6em;
+    -webkit-border-top-left-radius: 0.6em;
+    -moz-border-radius-topleft: 0.6em;
+    -webkit-border-top-right-radius: 0.6em;
+    -moz-border-radius-topright: 0.6em;
+}
+
+.toc .tocToggle {
+    font-size: 11px;
+    text-align: center;
+}
+
+.toc ul {
+    list-style-type: none;
+    padding-left: 4px;
+    margin: 1em 0;
+}
+
+.toc ul li {
+    display: block;
+    list-style: none;
+    font-size: 11px;
+    line-height: 16px;
+    width: 100%;
+    clear: both;
+}
+
+.toc ul li a.tocParent {
+    width: auto;
+    float: left;
+    clear: left;
+}
+
+.toc ul li .navHandle {
+    float: left;
+    margin: 1px 4px 0 5px;
+    width: 13px;
+    height: 13px;
+    clear: right;
+}
+
+.toc ul li ul {
+    padding-left: 16px;
+    margin: 0;
+    clear: both;
+}
+
+.toc .emptyHeading {
+    background: url(/web/20111118005309im_/http://runescape.salmoneus.net/assets/templates/salsrealm/images/layout/nav_empty.png) no-repeat;
+    cursor: default;
+}
+
+/* Highlighted highscore data */
+
+.help {
+    cursor: help;
+    border-bottom: 1px dashed #888;
+}
+
+.canPerform,
+.max {
+    color: #1D6F18;
+}
+
+.cantPerform,
+.min {
+    color: #c00;
+}
+
+.itemSubmit {
+    font-style: italic;
+}
+
+/* Tables */
+table {
+    border: 0;
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+table.classyTable,
+table.equipmentTable {
+    background: #BE9868;
+    border: .2em solid #7F5F27;
+    margin: .5em auto;
+    border-collapse: collapse;
+    border-spacing: 0;
+    clear: both;
+    width: 90%;
+}
+
+table.invisibleTable {
+    width: auto;
+    border: 0;
+    margin: .5em auto;
+}
+
+table.classyTable th,
+table.classyTable td {
+    border: 1px solid #381F04;
+    text-align: center;
+    font-size: 10px;
+}
+
+table.classyTable th {
+    padding: 3px 0;
+    font-size: 11px;
+}
+
+table.invisibleTable td,
+table.invisibleTable th {
+    padding: 0 0.4em 0.4em 0.4em;
+    text-align: center;
+}
+
+table th.left,
+table td.left,
+table td ul {
+    text-align: left;
+}
+
+table.classyTable th.header {
+    background: #CE9C70 url(/web/20111118005309im_/http://runescape.salmoneus.net/assets/templates/salsrealm/images/layout/table_header.png);
+    color: #2b1903;
+}
+
+table.classyTable thead {
+    background: #BD976A;
+}
+
+/* Sorting table columns */
+
+th.sorting a,
+th.sorting_desc a,
+th.sorting_asc a {
+    color: #000;
+    display: block;
+}
+
+th.sorting a:hover,
+th.sorting_desc a:hover,
+th.sorting_asc a:hover {
+    text-decoration: none;
+}
+
+div.pagination {
+    width: auto;
+    height: 22px;
+    line-height: 16px;
+    margin: 4px 2% 6px 0;
+    padding: 0;
+    float: right;
+}
+
+table.indexTable .title a {
+    display: block;
+    width: 100%;
+}
+
+/* Adverts */
+
+#advertContentTop {
+    position: relative;
+    z-index: 1000;
+    width: 300px;
+    height: 250px;
+    padding: 8px;
+    margin-left: 5px;
+    float: right;
+    background:  url(/web/20111118005309im_/http://runescape.salmoneus.net/assets/templates/salsrealm/images/layout/ad_frame_300x250.png) no-repeat;
+}
+
+#advertPageFooter {
+    position: relative;
+    z-index: 1000;
+    clear: both;
+    width: 728px;
+    height: 90px;
+    padding: 8px;
+    margin: 16px auto;
+    background:  url(/web/20111118005309im_/http://runescape.salmoneus.net/assets/templates/salsrealm/images/layout/ad_frame_728x90.png) no-repeat;
+}
+
+#advertHomeTop {
+    position: relative;
+    z-index: 1000;
+    clear: both;
+    width: 468px;
+    height: 60px;
+    padding: 8px;
+    margin: 6px auto;
+    background:  url(/web/20111118005309im_/http://runescape.salmoneus.net/assets/templates/salsrealm/images/layout/ad_frame_468x60.png) no-repeat;
+}
+
+.advertFrameInner {
+    position: relative;
+    z-index: 999;
+    text-align: center;
+    font-size: 11px;
+    background: #CBAE8B;
+    height: 100%;
+    overflow: hidden;
+}
+
+.advertSidebar {
+    height: 600px;
+    width: 160px;
+    overflow: hidden;
+    margin: 3px auto;
+    text-align: center;
+}
+
+/* DataTables */
+
+.dataTables_wrapper {
+    position: relative;
+    clear: both;
+}
+
+.dataTables_processing {
+    position: absolute;
+    top: 100px;
+    left: 50%;
+    width: 250px;
+    height: 30px;
+    margin: -15px 0 0 -125px;
+    padding: 14px 0 2px 0;
+    border: 2px solid #222;
+    text-align: center;
+    color: #999;
+    font-size: 14px;
+    background: url(/web/20111118005309im_/http://runescape.salmoneus.net/assets/templates/salsrealm/images/layout/grey_trans_75.png);
+    border-radius: 0.6em;
+    -moz-border-radius: 0.6em;
+    -o-border-radius: 0.6em;
+    -webkit-border-radius: 0.6em;
+}
+
+.dataTables_length {
+    width: auto;
+    float: left;
+    margin: 10px 0 10px 5%;
+}
+
+.dataTables_filter {
+    width: auto;
+    max-width: 50%;
+    float: left;
+    margin: 4px 0 4px 5%;
+}
+
+.noPaging .dataTables_filter {
+    max-width: 100%;
+}
+
+.dataTables_filter label {
+    margin-top: 6px;
+}
+
+.dataTables_filter label.filterLabel {
+    margin-top: 2px;
+}
+
+.dataTables_filter label input {
+    float: none;
+}
+
+.dataTables_info {
+    width: auto;
+    float: left;
+    margin:  5px 0 5px 5%;
+    font-size: 0.9em;
+    color: #222;
+}
+
+.dataTables_paginate {
+    float: right;
+    text-align: right;
+    margin: 4px 5% 4px 0;
+}
+
+.paginate_disabled_previous,
+.paginate_enabled_previous,
+.paginate_disabled_next,
+.paginate_enabled_next {
+    height: 19px;
+    width: 19px;
+    margin-left: 3px;
+    float: left;
+}
+
+table.dataTable thead th {
+    padding: 3px 18px 3px 10px;
+}
+
+th.sorting,
+th.sorting_asc,
+th.sorting_desc {
+    cursor: pointer;
+}
+
+th.header {
+    cursor: default;
+}
+
+th.sorting_asc {
+    background: #AC875A url(/web/20111118005309im_/http://runescape.salmoneus.net/assets/templates/salsrealm/images/icons/16x16/sort_asc.gif) no-repeat center right;
+}
+
+th.sorting_desc {
+    background: #AC875A url(/web/20111118005309im_/http://runescape.salmoneus.net/assets/templates/salsrealm/images/icons/16x16/sort_desc.gif) no-repeat center right;
+}
+
+th.sorting,
+th.sorting_asc_disabled,
+th.sorting_desc_disabled {
+    background: #BD976A url(/web/20111118005309im_/http://runescape.salmoneus.net/assets/templates/salsrealm/images/icons/16x16/sort_both.gif) no-repeat center right;
+}
+
+tr.odd {
+    background: #C59F70;
+}
+
+tr.even {
+    background: #BE9868;
+}
+
+.top,
+.bottom {
+    padding: 15px;
+    background-color: #F5F5F5;
+    border: 1px solid #CCCCCC;
+}
+
+.top .dataTables_info {
+    float: none;
+}
+
+.dataTables_empty {
+    text-align: center;
+}
+
+.paging_full_numbers {
+    width: auto;
+    height: 22px;
+    line-height: 22px;
+}
+
+span.paginate_button,
+span.paginate_active {
+    float: left;
+    border: 1px solid #8F622C;
+    padding: 2px 5px;
+    margin: 0 3px;
+    cursor: pointer;
+    border-radius: 0.6em;
+    -moz-border-radius: 0.6em;
+    -o-border-radius: 0.6em;
+    -webkit-border-radius: 0.6em;
+}
+
+span.paginate_button {
+    background: #D7AE85;
+}
+
+span.paginate_button:hover {
+    background: #DFBC8C;
+    border-color: #8F622C;
+}
+
+span.paginate_button a {
+    display: block;
+}
+
+span.paginate_button a:hover {
+    text-decoration: none;
+}
+
+span.paginate_active {
+    background: #DFBC8C;
+    color: #57432B;
+    cursor: default;
+    font-weight: bold;
+}
+
+.dataTables_paginate .paginate_button {
+    float: none;
+}
+
+div.tableInfo {
+    clear: both;
+}
+
+.clear {
+    clear: both;
+}
+
+.loading {
+    background-image: url(/web/20111118005309im_/http://runescape.salmoneus.net/assets/templates/salsrealm/images/icons/16x16/ajax-loader.gif);
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+input.loading {
+    background-position: right center;
+}
+
+.questDifficultyBar {
+    height: 16px;
+    background: url(/web/20111118005309im_/http://runescape.salmoneus.net/assets/templates/salsrealm/images/icons/16x16/sword.gif) repeat-x left center;
+    margin: 1px auto;
+}
+
+.questDifficultyBar span {
+    display: none;
+}
+
+.questComplete,
+.questIncomplete {
+    width: 16px;
+    height: 16px;
+    float: right;
+    background: url(/web/20111118005309im_/http://runescape.salmoneus.net/assets/templates/salsrealm/images/icons/16x16/check.png) no-repeat center center;
+}
+
+.questIncomplete {
+    background-image: url(/web/20111118005309im_/http://runescape.salmoneus.net/assets/templates/salsrealm/images/icons/16x16/uncheck.png);
+}
+
+/* Icon links */
+
+a.iconButton,
+a.icon {
+    display: block;
+    text-decoration: none;
+    text-align: left;
+    height: 16px;
+    line-height: 14px;
+    width: auto;
+    font-size: 11px;
+    color: #4F2F0C;
+    border: 1px solid #7F5F27;
+    background-color: #DFBC8C;
+    background-position: 2px 50%;
+    background-repeat: no-repeat;
+    padding: 5px 4px 2px 22px;
+    margin: 0 2px;
+    overflow: hidden;
+    border-radius: 0.6em;
+    -moz-border-radius: 0.6em;
+    -o-border-radius: 0.6em;
+    -webkit-border-radius: 0.6em;
+}
+
+a.iconButton:hover,
+a.icon:hover {
+    background-color: #CFAB81;
+}
+
+a.icon {
+    background-position: center center;
+    width: 16px;
+    padding: 4px;
+}
+
+a.icon span {
+    display: none;
+}
+
+/**
+ * Auto Complete 5.1
+ * April 13, 2010
+ * Corey Hart @ http://www.codenothing.com
+*/
+
+ul.auto-complete-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    z-index: 100;
+    max-height: 250px;
+    overflow: auto;
+    background: transparent url(/web/20111118005309im_/http://runescape.salmoneus.net/assets/templates/salsrealm/images/layout/grey_trans_75.png);
+    border: 1px solid #222;
+}
+
+ul.auto-complete-list li {
+    list-style-type: none;
+    margin: 0;
+    padding: 2px 4px;
+    border: 1px solid #222;
+    border-top: 0;
+    color: #9F9F9F;
+    cursor: pointer;
+    font-size: 11px;
+}
+
+ul.auto-complete-list li.auto-complete-list-rollover {
+    background: url(/web/20111118005309im_/http://runescape.salmoneus.net/assets/templates/salsrealm/images/layout/grey_trans_75.png);
+}
+
+/* Browser-specific CSS fixes */
+
+.opera input.siteSearchInput {
+    top: 29px;
+}
+
+.ff2 input.siteSearchInput {
+    top: 31px;
+}
+
+.opera input.siteSearchButton {
+    left: 32px;
+}
+
+.opera .pollArchive {
+    margin-top: -7px;
+}
+
+.opera td.radio input {
+    margin-left: 3px;
+}
+
+/*Remove button padding in FF*/
+input::-moz-focus-inner {
+    border: 0;
+    padding: 0;
+}
+
+/* Content Styles */
+
+img.right {
+    float: right;
+}
+
+img.left {
+    float: left;
+}
+
+img.center {
+    display: block;
+    margin: 0 auto;
+}
+
+img.middle {
+    vertical-align: middle;
+    margin-bottom: .25em;
+}
+
+img.frame {
+    border-width: 1px;
+    border-style: solid;
+    border-color: #b19879 #9e886c #927e64 #a99174;
+    background: #cbae8b;
+    padding: 5px;
+}
+
+div.center {
+    text-align: center;
+}
+
+div.center img.frame {
+    margin: 0 1px;
+}
+
+.members {
+    font-style: italic;
+}
+
+/* Content Messages */
+
+p.error,
+p.success,
+p.info,
+p.contentWarn,
+div.contentWarn,
+p.contentTip,
+div.contentTip,
+p.contentNote,
+div.contentNote,
+p.contentObsolete {
+    padding: 3px 3px 3px 32px;
+    line-height: 20px;
+    color: #000;
+    clear: left;
+    margin: 0 1em .5em 1em;
+    border-radius: 0.6em;
+    -moz-border-radius: 0.6em;
+    -o-border-radius: 0.6em;
+    -webkit-border-radius: 0.6em;
+}
+
+p.contentWarn,
+div.contentWarn,
+p.contentTip,
+div.contentTip,
+p.contentNote,
+div.contentNote,
+p.contentObsolete {
+    margin: 1em;
+}
+
+p.success,
+p.contentTip,
+div.contentTip {
+    border: 1px solid #215E21;
+    background: #78AB46 url(/web/20111118005309im_/http://runescape.salmoneus.net/assets/templates/salsrealm/images/icons/24x24/success.png) no-repeat 4px 50%;
+}
+
+p.info,
+p.contentNote,
+div.contentNote {
+    border: 1px solid #457F9F;
+    background: #A7CBDF url(/web/20111118005309im_/http://runescape.salmoneus.net/assets/templates/salsrealm/images/icons/24x24/info.png) no-repeat 4px 50%;
+}
+p.error,
+p.contentWarn,
+div.contentWarn,
+p.contentObsolete {
+    border: 1px solid #9E0508;
+    background: #F08080 url(/web/20111118005309im_/http://runescape.salmoneus.net/assets/templates/salsrealm/images/icons/24x24/warning.png) no-repeat 4px 50%;
+}
+
+p.contentObsolete {
+    background: #C0C0C0 url(/web/20111118005309im_/http://runescape.salmoneus.net/assets/templates/salsrealm/images/icons/24x24/obsolete.png) no-repeat 4px 50%;
+}
+
+p.error {
+    background-image: url(/web/20111118005309im_/http://runescape.salmoneus.net/assets/templates/salsrealm/images/icons/24x24/error.png);
+}
+
+td.left {
+    text-align: left;
+}
+
+table.equipmentTable {
+    width: auto;
+}
+
+.equipmentTable td {
+    white-space: nowrap;
+    min-width: 15px;
+}
+
+.equipmentTable th {
+    height: 53px;
+    width: 22px;
+    background-repeat: no-repeat;
+    background-position: bottom center;
+}
+
+.equipmentTable th.header {
+    height: auto;
+    width: auto;
+}
+
+.equipmentTable th b {
+    display: none;
+}
+
+th.equipStab {
+    background-image: url(/web/20111118005309im_/http://runescape.salmoneus.net/assets/templates/salsrealm/images/layout/stab.gif);
+}
+
+th.equipSlash {
+    background-image: url(/web/20111118005309im_/http://runescape.salmoneus.net/assets/templates/salsrealm/images/layout/slash.gif);
+}
+
+th.equipCrush {
+    background-image: url(/web/20111118005309im_/http://runescape.salmoneus.net/assets/templates/salsrealm/images/layout/crush.gif);
+}
+
+th.equipMagic {
+    background-image: url(/web/20111118005309im_/http://runescape.salmoneus.net/assets/templates/salsrealm/images/layout/magic.gif);
+}
+
+th.equipRanged {
+    background-image: url(/web/20111118005309im_/http://runescape.salmoneus.net/assets/templates/salsrealm/images/layout/ranged.gif);
+}
+
+th.equipSummoning {
+    background-image: url(/web/20111118005309im_/http://runescape.salmoneus.net/assets/templates/salsrealm/images/layout/summoning.gif);
+}
+
+th.equipStrength {
+    background-image: url(/web/20111118005309im_/http://runescape.salmoneus.net/assets/templates/salsrealm/images/layout/strength.gif);
+}
+
+th.equipPrayer {
+    background-image: url(/web/20111118005309im_/http://runescape.salmoneus.net/assets/templates/salsrealm/images/layout/prayer.gif);
+}
+
+th.equipRangedStrength {
+    background-image: url(/web/20111118005309im_/http://runescape.salmoneus.net/assets/templates/salsrealm/images/layout/ranged-strength.gif);
+}
+
+th.equipMagicDamage {
+    background-image: url(/web/20111118005309im_/http://runescape.salmoneus.net/assets/templates/salsrealm/images/layout/magic-damage.gif);
+}
+
+th.equipAbsorbMelee {
+    background-image: url(/web/20111118005309im_/http://runescape.salmoneus.net/assets/templates/salsrealm/images/layout/melee.gif);
+}
+
+th.equipAbsorbMagic {
+    background-image: url(/web/20111118005309im_/http://runescape.salmoneus.net/assets/templates/salsrealm/images/layout/magic.gif);
+}
+
+th.equipAbsorbRanged {
+    background-image: url(/web/20111118005309im_/http://runescape.salmoneus.net/assets/templates/salsrealm/images/layout/ranged.gif);
+}
+
+/*
+ * FancyBox - jQuery Plugin
+ * http://fancybox.net
+ * Copyright (c) 2008 - 2010 Janis Skarnelis
+*/
+
+#fancybox-loading {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    height: 40px;
+    width: 40px;
+    margin-top: -20px;
+    margin-left: -20px;
+    cursor: pointer;
+    overflow: hidden;
+    z-index: 1104;
+    display: none;
+}
+
+#fancybox-loading div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 40px;
+    height: 480px;
+    background-image: url(/web/20111118005309im_/http://runescape.salmoneus.net/assets/templates/salsrealm/images/fancybox/fancybox.png);
+}
+
+#fancybox-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: #000;
+    z-index: 1100;
+    display: none;
+}
+
+#fancybox-tmp {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    overflow: auto;
+    display: none;
+}
+
+#fancybox-wrap {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 0;
+    padding: 20px;
+    z-index: 1101;
+    display: none;
+}
+
+#fancybox-outer {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+}
+
+#fancybox-inner {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: 0;
+    outline: none;
+    overflow: hidden;
+}
+
+#fancybox-hide-sel-frame {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    z-index: 1101;
+}
+
+#fancybox-close {
+    position: absolute;
+    top: -15px;
+    right: -15px;
+    width: 30px;
+    height: 30px;
+    background-image: url(/web/20111118005309im_/http://runescape.salmoneus.net/assets/templates/salsrealm/images/fancybox/fancybox.png);
+    background-position: -40px 0px;
+    cursor: pointer;
+    z-index: 1103;
+    display: none;
+}
+
+#fancybox_error {
+    color: #444;
+    font: normal 12px/20px Arial;
+    padding: 7px;
+    margin: 0;
+}
+
+#fancybox-content {
+    height: auto;
+    width: auto;
+    padding: 0;
+    margin: 0;
+}
+
+#fancybox-img {
+    padding: 0;
+    margin: 0;
+    border: none;
+    outline: none;
+    line-height: 0;
+    vertical-align: top;
+}
+
+#fancybox-frame {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border: none;
+    display: block;
+}
+
+#fancybox-left,
+#fancybox-right {
+    position: absolute;
+    bottom: 0px;
+    height: 100%;
+    width: 35%;
+    cursor: pointer;
+    outline: none;
+    background-image: url(/web/20111118005309im_/http://runescape.salmoneus.net/assets/templates/salsrealm/images/fancybox/blank.gif);
+    z-index: 1102;
+    display: none;
+}
+
+#fancybox-left {
+    left: 0px;
+}
+
+#fancybox-right {
+    right: 0px;
+}
+
+#fancybox-left-ico,
+#fancybox-right-ico {
+    position: absolute;
+    top: 50%;
+    left: -9999px;
+    width: 30px;
+    height: 30px;
+    margin-top: -15px;
+    cursor: pointer;
+    z-index: 1102;
+    display: block;
+}
+
+#fancybox-left-ico {
+    background-image: url(/web/20111118005309im_/http://runescape.salmoneus.net/assets/templates/salsrealm/images/fancybox/fancybox.png);
+    background-position: -40px -30px;
+}
+
+#fancybox-right-ico {
+    background-image: url(/web/20111118005309im_/http://runescape.salmoneus.net/assets/templates/salsrealm/images/fancybox/fancybox.png);
+    background-position: -40px -60px;
+}
+
+#fancybox-left:hover span {
+    left: 20px;
+}
+
+#fancybox-right:hover span {
+    left: auto;
+    right: 20px;
+}
+
+.fancy-bg {
+    position: absolute;
+    padding: 0;
+    margin: 0;
+    border: 0;
+    width: 20px;
+    height: 20px;
+    z-index: 1001;
+}
+
+#fancy-bg-n {
+    top: -20px;
+    left: 0;
+    width: 100%;
+    background-image: url(/web/20111118005309im_/http://runescape.salmoneus.net/assets/templates/salsrealm/images/fancybox/fancybox-x.png);
+}
+
+#fancy-bg-ne {
+    top: -20px;
+    right: -20px;
+    background-image: url(/web/20111118005309im_/http://runescape.salmoneus.net/assets/templates/salsrealm/images/fancybox/fancybox.png);
+    background-position: -40px -162px;
+}
+
+#fancy-bg-e {
+    top: 0;
+    right: -20px;
+    height: 100%;
+    background-image: url(/web/20111118005309im_/http://runescape.salmoneus.net/assets/templates/salsrealm/images/fancybox/fancybox-y.png);
+    background-position: -20px 0px;
+}
+
+#fancy-bg-se {
+    bottom: -20px;
+    right: -20px;
+    background-image: url(/web/20111118005309im_/http://runescape.salmoneus.net/assets/templates/salsrealm/images/fancybox/fancybox.png);
+    background-position: -40px -182px;
+}
+
+#fancy-bg-s {
+    bottom: -20px;
+    left: 0;
+    width: 100%;
+    background-image: url(/web/20111118005309im_/http://runescape.salmoneus.net/assets/templates/salsrealm/images/fancybox/fancybox-x.png);
+    background-position: 0px -20px;
+}
+
+#fancy-bg-sw {
+    bottom: -20px;
+    left: -20px;
+    background-image: url(/web/20111118005309im_/http://runescape.salmoneus.net/assets/templates/salsrealm/images/fancybox/fancybox.png);
+    background-position: -40px -142px;
+}
+
+#fancy-bg-w {
+    top: 0;
+    left: -20px;
+    height: 100%;
+    background-image: url(/web/20111118005309im_/http://runescape.salmoneus.net/assets/templates/salsrealm/images/fancybox/fancybox-y.png);
+}
+
+#fancy-bg-nw {
+    top: -20px;
+    left: -20px;
+    background-image: url(/web/20111118005309im_/http://runescape.salmoneus.net/assets/templates/salsrealm/images/fancybox/fancybox.png);
+    background-position: -40px -122px;
+}
+
+#fancybox-title {
+    font-family: Helvetica;
+    font-size: 12px;
+    z-index: 1102;
+}
+
+.fancybox-title-inside {
+    padding-bottom: 10px;
+    text-align: center;
+    color: #333;
+    background: #fff;
+    position: relative;
+}
+
+.fancybox-title-outside {
+    padding-top: 10px;
+    color: #fff;
+}
+
+.fancybox-title-over {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    color: #FFF;
+    text-align: left;
+}
+
+#fancybox-title-over {
+    padding: 10px;
+    background-image: url(/web/20111118005309im_/http://runescape.salmoneus.net/assets/templates/salsrealm/images/fancybox/fancy_title_over.png);
+    display: block;
+}
+
+.fancybox-title-float {
+    position: absolute;
+    left: 0;
+    bottom: -20px;
+    height: 32px;
+}
+
+#fancybox-title-float-wrap {
+    border: none;
+    border-collapse: collapse;
+    width: auto;
+}
+
+#fancybox-title-float-wrap td {
+    border: none;
+    white-space: nowrap;
+}
+
+#fancybox-title-float-left {
+    padding: 0 0 0 15px;
+    background: url(/web/20111118005309im_/http://runescape.salmoneus.net/assets/templates/salsrealm/images/fancybox/fancybox.png) -40px -90px no-repeat;
+}
+
+#fancybox-title-float-main {
+    color: #FFF;
+    line-height: 29px;
+    font-weight: bold;
+    padding: 0 0 3px 0;
+    background: url(/web/20111118005309im_/http://runescape.salmoneus.net/assets/templates/salsrealm/images/fancybox/fancybox-x.png) 0px -40px;
+}
+
+#fancybox-title-float-right {
+    padding: 0 0 0 15px;
+    background: url(/web/20111118005309im_/http://runescape.salmoneus.net/assets/templates/salsrealm/images/fancybox/fancybox.png) -55px -90px no-repeat;
+}
+
+/*
+ * qTip2 - http://craigsworks.com/projects/qtip2/
+ */
+
+.ui-tooltip {
+    position: absolute;
+    left: -28000px;
+    top: -28000px;
+    display: none;
+    max-width: 300px;
+    min-width: 50px;
+    font-size: 10.5px;
+    line-height: 12px;
+    z-index: 15000;
+}
+
+/* Fluid class for determining actual width in IE */
+.ui-tooltip-fluid {
+    display: block;
+    visibility: hidden;
+    position: static !important;
+    float: left !important;
+}
+
+.ui-tooltip-content {
+    position: relative;
+    padding: 5px 9px;
+    overflow: hidden;
+    border-width: 1px;
+    border-style: solid;
+    text-align: left;
+    word-wrap: break-word;
+    overflow: hidden;
+}
+
+.ui-tooltip-titlebar {
+    position: relative;
+    min-height: 14px;
+    padding: 5px 10px 5px 10px;
+    overflow: hidden;
+    border-width: 1px 1px 0;
+    border-style: solid;
+    font-weight: bold;
+}
+
+.ui-tooltip-titlebar + .ui-tooltip-content {
+    border-top-width: 0px !important;
+}
+
+/*! Default close button class */
+.ui-tooltip-titlebar .ui-state-default {
+    position: absolute;
+    right: 4px;
+    top: 50%;
+    margin-top: -9px;
+    cursor: pointer;
+    outline: medium none;
+    border-width: 1px;
+    border-style: solid;
+}
+
+* html .ui-tooltip-titlebar .ui-state-default {
+    top: 16px;
+}
+
+.ui-tooltip-titlebar .ui-icon,
+.ui-tooltip-icon .ui-icon {
+    display: block;
+    text-indent: -1000em;
+}
+
+.ui-tooltip-icon,
+.ui-tooltip-icon .ui-icon {
+    border-radius: 0.3em;
+    -moz-border-radius: 0.3em;
+    -moz-border-radius: 0.3em;
+    -webkit-border-radius: 0.3em;
+}
+
+.ui-tooltip-icon .ui-icon{
+    width: 18px;
+    height: 14px;
+    text-align: center;
+    text-indent: 0;
+    font: normal bold 10px/13px Tahoma,sans-serif;
+    color: inherit;
+    background: transparent none no-repeat -100em -100em;
+}
+
+/*! Default tooltip style */
+.ui-tooltip-default .ui-tooltip-titlebar,
+.ui-tooltip-default .ui-tooltip-content {
+    border-color: #F1D031;
+    background-color: #FFFFA3;
+    color: #555;
+}
+
+.ui-tooltip-default .ui-tooltip-titlebar {
+    background-color: #FFEF93;
+}
+
+.ui-tooltip-default .ui-tooltip-icon {
+    border-color: #CCC;
+    background: #F1F1F1;
+    color: #777;
+}
+
+.ui-tooltip-default .ui-tooltip-titlebar .ui-state-hover {
+    border-color: #AAA;
+    color: #111;
+}
+
+.ui-tooltip .ui-tooltip-tip {
+    margin: 0 auto;
+    overflow: hidden;
+    background: transparent !important;
+    border: 0px dashed transparent !important;
+    z-index: 10;
+}
+
+.ui-tooltip .ui-tooltip-tip,
+.ui-tooltip .ui-tooltip-tip *{
+    position: absolute;
+    line-height: 0.1px !important;
+    font-size: 0.1px !important;
+    color: #123456;
+    background: transparent;
+    border: 0px dashed transparent;
+}
+
+.ui-tooltip .ui-tooltip-tip canvas {
+    top: 0;
+    left: 0;
+}
+
+.ui-tooltip-rounded,
+.ui-tooltip-rounded .ui-tooltip-content {
+    border-radius: 0.4em;
+    -moz-border-radius: 0.4em;
+    -o-border-radius: 0.4em;
+    -webkit-border-radius: 0.4em;
+}
+
+.ui-tooltip-rounded .ui-tooltip-titlebar {
+    border-radius: 0.5em 0.5em 0 0;
+    -moz-border-radius: 0.5em 0.5em 0 0;
+    -o-border-radius: 0.5em 0.5em 0 0;
+    -webkit-border-radius: 0.5em 0.5em 0 0;
+}
+
+.ui-tooltip-rounded .ui-tooltip-titlebar + .ui-tooltip-content{
+    border-radius: 0 0 0.5em 0.5em;
+    -moz-border-radius: 0 0 0.5em 0.5em;
+    -o-border-radius: 0 0 0.5em 0.5em;
+    -webkit-border-radius: 0 0 0.5em 0.5em;
+}
+
+.ui-tooltip-ajax {
+    max-width: 450px;
+}
+
+/*! Sal's Realm tooltip style */
+
+.ui-tooltip-realm .ui-tooltip-titlebar {
+    background: #AC875A;
+    border: 1px solid #7F5F27;
+    color: #222;
+}
+
+.ui-tooltip-title {
+    width: 100%;
+}
+
+.ui-tooltip-realm .ui-tooltip-content {
+    background: #C59F70;
+    border: 1px solid #7F5F27;
+    color: #111;
+    font-size: 11px;
+}
+
+.ui-tooltip-realm .ui-tooltip-titlebar .memberIcon,
+.ui-tooltip-realm .ui-tooltip-titlebar .freeplayIcon {
+    margin: 2px 0 0 0;
+    float: right;
+    background-repeat: no-repeat;
+}
+
+.ui-tooltip-content .loading {
+    height: 50px;
+    width: 100%;
+    min-width: 150px;
+    background-position: center center;
+}
+
+.ui-tooltip-content ul {
+    margin-left: 12px;
+    padding: 4px 0 4px 6px;
+    list-style: square;
+    color: #111;
+}
+
+/* Site Search */
+
+ol.searchResults {
+    margin: 1em 0;
+    padding: 0;
+}
+
+ol.searchResults li {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    border-bottom: 1px solid #CA9D6D;
+}
+.searchResultInfo {
+
+}
+
+.searchResultPaging {
+    width: 100%;
+    text-align: center;
+    line-height: 18px;
+}
+
+.searchResultPaging span.paginate_button,
+.searchResultPaging span.paginate_active {
+    display: inline-block;
+    width: 30px;
+    height: 18px;
+    margin: 3px auto;
+    padding: 2px 5px;
+    padding: 0;
+    float: none;
+}
+
+.searchResults li {
+    font-size: 11px;
+}
+
+.searchResults li .updated {
+    color: #222;
+}
+
+.searchHighlight {
+    font-weight: bold;
+}
+
+.supporterList ul {
+    list-style: none;
+    margin: 0 auto 1.33em auto;
+    padding: 0 5px;
+    width: 100%;
+}
+
+/* Gallery and Galleriffic */
+
+#gallery ul.thumbs li,
+#albums ul.thumbs li {
+    float: left;
+    padding: 5px;
+    margin: 3px;
+    list-style: none;
+    width: 92px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #b19879 #9e886c #927e64 #a99174;
+    background: #cbae8b;
+    opacity: 0.8;
+    text-align: center;
+}
+
+#albums ul.thumbs li {
+    width: 142px;
+    opacity: 0.67;
+}
+
+#gallery ul.thumbs li .caption {
+    height: 250px;
+    overflow: hidden
+}
+
+#albums ul.thumbs li .name {
+    display: block;
+    padding: 0 0 3px 0;
+    font-size: 0.9em;
+    font-weight: bold;
+    text-align: center;
+}
+
+#albums ul.thumbs li a:hover {
+    text-decoration: none;
+}
+
+#gallery ul.thumbs li.selected,
+#albums ul.thumbs li.selected {
+    opacity: 1.0;
+    border-width: 2px;
+}
+
+#gallery .navigation ul.thumbs li:hover,
+#albums ul.thumbs li:hover {
+    opacity: 1.0;
+}
+
+#gallery .navigation ul.thumbs li img {
+    border-width: 1px;
+    border-style: solid;
+    border-color: #927e64 #a99174 #b19879 #9e886c;
+}
+
+#gallery .navigation .pageLink {
+    position: relative;
+    display: block;
+    float: left;
+    margin: 2px;
+    width: 16px;
+    height: 132px;
+    visibility: hidden;
+    opacity: 0.67;
+}
+
+#gallery .navigation .pageLink:focus {
+    outline: none;
+}
+
+#gallery .navigation .prev {
+    background: url(/web/20111118005309im_/http://runescape.salmoneus.net/assets/templates/salsrealm/images/icons/16x16/prev_arrow_black.gif) no-repeat center center;
+}
+
+#gallery .navigation .next {
+    background: url(/web/20111118005309im_/http://runescape.salmoneus.net/assets/templates/salsrealm/images/icons/16x16/next_arrow_black.gif) no-repeat center center;
+}
+
+#gallery .gal_main {
+    display: none;
+    clear: both;
+}
+
+#gallery .navigation-container,
+#albums .navigation-container {
+    position: relative;
+    float: left;
+    left: 50%;
+}
+
+#gallery .navigation-container .navigation,
+#albums .navigation-container .navigation {
+    position: relative;
+    float: left;
+    left: -50%;
+}
+
+#gallery .navigation-container .navigation ul.thumbs,
+#albums .navigation-container .navigation ul.thumbs {
+    position: relative;
+    float: left;
+    margin: 1.5em 0 0 0;
+    padding: 0;
+}
+
+#gallery .slideshow-container {
+    position: relative;
+    clear: both;
+    float: left;
+    width: 520px;
+    margin: 0 0.5em;
+    padding: 0.5em;
+    text-align: center;
+    z-index: 2;
+}
+
+#gallery .galleriffic .slideshow-container {
+    height: 520px;
+}
+
+#gallery .controls {
+    height: 23px;
+    margin: 5px 0 0 0;
+}
+
+#gallery .controls .ss-controls {
+    float: left;
+}
+
+#gallery .controls .nav-controls {
+    float: right;
+}
+
+#gallery .controls a {
+    padding: 5px;
+}
+
+#gallery .loader {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 520px;
+    height: 520px;
+    background: url(/web/20111118005309im_/http://runescape.salmoneus.net/assets/templates/salsrealm/images/icons/16x16/ajax-loader.gif) no-repeat center center;
+}
+
+#gallery .slideshow span.image-wrapper {
+    position: absolute;
+    display: block;
+    top: 30px;
+    left: 0;
+}
+
+#gallery .slideshow a.advance-link {
+    display: block;
+    width: 520px;
+    height: 520px;
+    text-align: center;
+}
+
+#gallery .slideshow a.advance-link:hover {
+    text-decoration: none;
+}
+
+#gallery .slideshow img {
+    border-width: 1px;
+    border-style: solid;
+    border-color: #b19879 #9e886c #927e64 #a99174;
+    background: #cbae8b;
+    margin: 3px;
+    padding: 5px;
+}
+
+#gallery .caption-container {
+    position: relative;
+    margin: 0;
+    padding: 30px 0 0 0;
+}
+
+#gallery .caption-container h3 {
+    margin-top: 0;
+    padding-top: 5px;
+}
+
+#gallery .image-caption {
+    display: block;
+    position: absolute;
+    top: 30px;
+    left: 540px;
+    z-index: 1;
+}
+
+#gallery .image-desc,
+#gallery .image-meta,
+#gallery .download {
+    font-size: 0.9em;
+    line-height: 1.3em;
+    color: #222;
+}
+/*
+     FILE ARCHIVED ON 00:53:09 Nov 18, 2011 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 19:36:33 Dec 01, 2021.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  captures_list: 120.529
+  exclusion.robots: 0.198
+  exclusion.robots.policy: 0.184
+  cdx.remote: 0.111
+  esindex: 0.012
+  LoadShardBlock: 77.559 (3)
+  PetaboxLoader3.datanode: 105.297 (4)
+  CDXLines.iter: 23.135 (3)
+  load_resource: 97.824
+  PetaboxLoader3.resolve: 38.919
+*/
