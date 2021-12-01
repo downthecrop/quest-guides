@@ -1,0 +1,426 @@
+var _____WB$wombat$assign$function_____ = function(name) {return (self._wb_wombat && self._wb_wombat.local_init && self._wb_wombat.local_init(name)) || self[name]; };
+if (!self.__WB_pmw) { self.__WB_pmw = function(obj) { this.__WB_source = obj; return this; } }
+{
+  let window = _____WB$wombat$assign$function_____("window");
+  let self = _____WB$wombat$assign$function_____("self");
+  let document = _____WB$wombat$assign$function_____("document");
+  let location = _____WB$wombat$assign$function_____("location");
+  let top = _____WB$wombat$assign$function_____("top");
+  let parent = _____WB$wombat$assign$function_____("parent");
+  let frames = _____WB$wombat$assign$function_____("frames");
+  let opener = _____WB$wombat$assign$function_____("opener");
+
+/*****************************
+
+* This is a jQuery Plugin (coded with version 1.7.1) that creates a versatile notification 
+
+* popup box. This is a custom coded plugin for RuneHQ.com. All Rights Reserved.
+
+******************************
+
+* 03/13/12 - Plugin Created - Spartan
+
+*****************************/
+
+
+
+//To help older browsers limp along (Modern browsers support objects, legacy don't)
+
+if(typeof Object.create !== 'function') {
+
+	Object.create = function(obj) {
+
+		function F() {};
+
+		F.prototype = obj;
+
+		return new F();
+
+	}
+
+}
+
+
+
+//Functions for Cookies YuM!
+
+function getNotificationCookie(name)
+
+{
+
+	if (document.cookie.length>0) {
+
+		name += "_notification";
+
+		cookie=document.cookie.indexOf(name + "=");
+
+		
+
+		if (cookie!=-1) {
+
+			cookie=cookie + name.length+1;
+
+			end=document.cookie.indexOf(";",cookie);
+
+			if (end==-1) end=document.cookie.length;
+
+			return unescape(document.cookie.substring(cookie,end));
+
+		}
+
+	}
+
+
+
+	return "";
+
+}
+
+
+
+function removeNotificationCookie(name)
+
+{
+
+	document.cookie = name+"_notification=; expires=Thu, 01-Jan-70 00:00:01 GMT;";
+
+}
+
+
+
+function setNotificationCookie(name,days)
+
+{
+
+	var newdate = new Date();
+
+	newdate.setDate(newdate.getDate() + days);
+
+	document.cookie=name+"_notification=note expires="+newdate.toUTCString()+" path=/";
+
+}
+
+
+
+//Avoid clashes with other libraries
+
+(function($,window,document,undefined) {
+
+
+
+	//Set Plugin Object
+
+	var notification = {
+
+		init: function( options, elm) {
+
+			var self = this;
+
+
+
+			self.elm = elm;
+
+			self.$elm = $(elm); //Cache jQuery version
+
+
+
+			//If a string has been provided, 
+
+			//we'll assume they are forcing the notification open
+
+			self.options = $.fn.rhqNotification.options;
+
+			
+
+
+
+			if(typeof options !== 'object' && options)	{
+
+				self.options.forceOpen = true;
+
+			} else if(typeof options === 'object') {
+
+				//Get Default Options, Update User Set Options
+
+				self.options = $.extend( {}, $.fn.rhqNotification.options, options );
+
+			}
+
+			
+
+			self.header = self.$elm.find(self.options.headerName);
+
+			self.content = self.$elm.find(self.options.contentName);
+
+			self.closed = self.$elm.find(self.options.closeName);
+
+
+
+			self.cookie = getNotificationCookie(self.elm.id);
+
+			
+
+			self.run();
+
+		},
+
+
+
+		run: function() {
+
+			var self = this;
+
+
+
+			self.checkCookie();
+
+
+
+			self.setPosition();
+
+
+
+			self.trigger();
+
+		},
+
+
+
+		checkCookie: function() {
+
+			var self = this;
+
+
+
+			if(~~self.options.forceOpen) {
+
+				self.updateState(true);
+
+			} else if(self.cookie)
+
+			{
+
+				self.updateState();
+
+				self.content.hide();
+
+			}
+
+		},
+
+
+
+		setPosition: function() {
+
+			var self = this;
+
+
+
+			//We don't want confiliting positions
+
+			if(self.options.top !== 'auto')
+
+			{
+
+				self.options.bottom = 'auto';
+
+			} else
+
+			{
+
+				self.options.top = 'auto';
+
+			}
+
+
+
+			if(self.options.left !== 'auto')
+
+			{
+
+				self.options.right = 'auto';
+
+			} else
+
+			{
+
+				self.options.left = 'auto';
+
+			}
+
+
+
+			self.$elm.css({
+
+				'position':'fixed',
+
+				'bottom':self.options.bottom,
+
+				'top':self.options.top,
+
+				'left':self.options.left,
+
+				'right':self.options.right,
+
+				'z-index':1000,
+
+			});
+
+		},
+
+
+
+		trigger: function()
+
+		{
+
+			var self = this;
+
+
+
+			self.closed.click(function() {
+
+				self.updateState();
+
+				self.show();
+
+			});
+
+		},
+
+
+
+		show: function() {
+
+			var self = this;
+
+
+
+			if ( self.options.transition === 'none' || !self.options.transition ) {
+
+				self.content.slideToggle(self.options.transitionSpeed);
+
+			} else {
+
+				self.content[self.options.transition](self.options.transitionSpeed);
+
+			}
+
+		},
+
+
+
+		updateState: function(opened) {
+
+			var self = this;
+
+
+
+			var opened = (!opened) ? false : true;
+
+
+
+			var type = (self.header.attr('id')) ? 'id' : 'class';
+
+			var closed = self.options.headerName.substring(1)+'-closed';
+
+
+
+			if(opened || self.header.attr(type) == closed)
+
+			{
+
+				removeNotificationCookie(self.elm.id);
+
+				self.header.attr(type,self.options.headerName.substring(1));
+
+				self.closed.html(self.options.closeText);
+
+			} else
+
+			{
+
+				setNotificationCookie(self.elm.id,self.options.showIn);
+
+				self.header.attr(type,closed);
+
+				self.closed.html(self.options.openText);
+
+			}
+
+		}
+
+	}
+
+
+
+	$.fn.rhqNotification = function(options) {
+
+		return this.each(function() {
+
+			var instance = Object.create(notification);
+
+			instance.init(options, this);
+
+		});
+
+	}
+
+
+
+	//Set Default Options
+
+	$.fn.rhqNotification.options = {
+
+        headerName: '.content-header', //Can be either id or class, MUST include selector
+
+        contentName: '.content-container', //Can be either id or class, MUST include selector
+
+        closeName: '.close', //Can be either id or class, MUST include selector
+
+        openText: 'Open', //Text "link" seen for user to open content
+
+        closeText: 'Close', //Text "link" seen for user to hide content
+
+        forceOpen: false, //Ignore cookie settings, always show "open" state on page
+
+        top: null, //Fixed position on page, overrides bottom if both are set
+
+        right: '25px', //Fixed position on page
+
+        bottom: '26px', //Fixed position on page
+
+        left: null, //Fixed position on page, overrides right if both are set
+
+        showIn: '7', //Show every X days
+
+        transition: 'slideToggle', //FadeToggle doesn't work, but at a later time if you'd need a custom animation, you could drop the name here and be done with it
+
+        transitionSpeed: null, //Accepts either miliseconds, or jQuery keywords, defaults back to jQuery's default of 400 ms
+
+	}
+
+})(jQuery,window,document);
+
+}
+/*
+     FILE ARCHIVED ON 01:30:09 Aug 08, 2012 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 20:09:57 Dec 01, 2021.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  captures_list: 99.894
+  exclusion.robots: 0.152
+  exclusion.robots.policy: 0.143
+  RedisCDXSource: 0.687
+  esindex: 0.013
+  LoadShardBlock: 78.594 (3)
+  PetaboxLoader3.datanode: 71.694 (4)
+  CDXLines.iter: 14.941 (3)
+  load_resource: 61.806
+  PetaboxLoader3.resolve: 30.722
+*/
