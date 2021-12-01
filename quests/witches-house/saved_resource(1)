@@ -1,0 +1,46 @@
+var _____WB$wombat$assign$function_____ = function(name) {return (self._wb_wombat && self._wb_wombat.local_init && self._wb_wombat.local_init(name)) || self[name]; };
+if (!self.__WB_pmw) { self.__WB_pmw = function(obj) { this.__WB_source = obj; return this; } }
+{
+  let window = _____WB$wombat$assign$function_____("window");
+  let self = _____WB$wombat$assign$function_____("self");
+  let document = _____WB$wombat$assign$function_____("document");
+  let location = _____WB$wombat$assign$function_____("location");
+  let top = _____WB$wombat$assign$function_____("top");
+  let parent = _____WB$wombat$assign$function_____("parent");
+  let frames = _____WB$wombat$assign$function_____("frames");
+  let opener = _____WB$wombat$assign$function_____("opener");
+
+if (window['google'] != undefined && window['google']['loader'] != undefined) {
+if (!window['google']['search']) {
+window['google']['search'] = {};
+google.search.Version = '1.0';
+google.search.NoOldNames = false;
+google.search.JSHash = '289eef681d59caef05fd602d47c986ce';
+google.search.LoadArgs = 'file\75search\46v\0751\46hl\75en\46output\75nocss%3Dtrue';
+}
+google.loader.writeLoadTag("script", google.loader.ServiceBase + "/api/search/1.0/289eef681d59caef05fd602d47c986ce/default+en.I.js", false);
+}
+
+
+}
+/*
+     FILE ARCHIVED ON 07:27:42 Jun 07, 2012 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 20:43:52 Dec 01, 2021.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  captures_list: 131.89
+  exclusion.robots: 0.1
+  exclusion.robots.policy: 0.091
+  RedisCDXSource: 1.685
+  esindex: 0.009
+  LoadShardBlock: 73.871 (3)
+  PetaboxLoader3.datanode: 58.837 (4)
+  CDXLines.iter: 36.07 (3)
+  load_resource: 225.025
+  PetaboxLoader3.resolve: 186.682
+*/

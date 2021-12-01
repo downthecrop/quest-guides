@@ -1,0 +1,269 @@
+/* ================================================================ 
+This copyright notice must be untouched at all times.
+
+The original version of this stylesheet and the associated (x)html
+is available at http://www.cssplay.co.uk/menus/final_drop.html
+Copyright (c) 2005-2008 Stu Nicholls. All rights reserved.
+This stylesheet and the associated (x)html may be modified in any 
+way to fit your requirements.
+=================================================================== */
+
+#navigation {
+    /*height:32px;*/
+    position:relative;
+    top: -20px;
+    z-index:100;
+    /*border-right:1px solid #ffffff;*/
+    font-family:arial, sans-serif;
+}
+
+/* hack to correct IE5.5 faulty box model */
+* html #navigation {}
+
+/* remove all the bullets, borders and padding from the default list styling */
+#navigation ul {
+    padding-top: 18px;
+    margin:0;
+    list-style-type:none;
+}
+
+#navigation ul ul {
+    padding-left:0;
+    padding-top: 0;
+    width:149px;
+}
+
+/* float the list to make it horizontal and a relative positon so that you can control the dropdown menu positon */
+#navigation li {
+    float:left;
+    position:relative;
+}
+
+/* style the links for the top level */
+#navigation a, #navigation a:visited {
+    display:block;
+    font-size:14px;
+    text-decoration:none;
+    color:#ffffff;
+	text-shadow: black 0.1em 0.1em 0.2em;
+    height:30px;
+    /*border:1px solid #ffffff;
+    border-width:1px 0 1px 1px;*/
+    /*background:#ffffff;*/
+    padding-left:19px;
+    padding-right:18px;
+    line-height:29px;
+    font-weight:bold;
+}
+
+/* a hack so that IE5.5 faulty box model is corrected */
+* html #navigation a, * html #navigation a:visited {}
+
+/* style the second level background */
+#navigation ul ul a.drop, #navigation ul ul a.drop:visited {
+    /*background:#480000 130px center;*/
+    background-image:url(/web/20120210193124im_/http://runehq.com/image/layout/navigation/nav-hover-2.png);
+    background-position:right top;
+}
+
+/* style the second level hover */
+#navigation ul ul a.drop:hover {
+    background:#480000 130px center;
+}
+
+#navigation ul ul :hover > a.drop {
+    /*background:#880000 130px center;*/
+    background-image:url(/web/20120210193124im_/http://runehq.com/image/layout/navigation/nav-hover.png);
+    background-position:right top;
+}
+
+/* style the third level background */
+#navigation ul ul ul a, #navigation ul ul ul a:visited {
+    /*background:#480000;*/
+    background-image:url(/web/20120210193124im_/http://runehq.com/image/layout/navigation/nav-hover-2.png);
+    background-position:right top;
+}
+
+/* style the third level hover */
+#navigation ul ul ul a:hover {
+    /*background:#880000;*/
+    background-image:url(/web/20120210193124im_/http://runehq.com/image/layout/navigation/nav-hover.png);
+    background-position:right top;
+}
+
+/* hide the sub levels and give them a positon absolute so that they take up no room */
+#navigation ul ul, #navigation ul ul ul, #navigation ul ul ul ul {
+    visibility:hidden;
+    position:absolute;
+    height:0;
+    top:30px;
+    left:0;
+    width:198px;
+    border-top:0px solid #2b1a1a;
+}
+
+/* another hack for IE5.5 */
+* html #navigation ul ul {
+    top:30px;
+    top:31px;
+}
+
+/* position the third level flyout menu */
+#navigation ul ul ul{
+    left:198px;
+    top:-1px;
+    width:198px;
+}
+
+/* position the third level flyout menu for a left flyout */
+#navigation ul ul ul.left {
+    left:-198px;
+}
+
+/* position the fourth level flyout menu */
+#navigation ul ul ul ul{
+    left:198px;
+    top:-1px;
+    width:198px;
+}
+
+/* style the table so that it takes no part in the layout - required for IE to work */
+#navigation table {
+    position:absolute;
+    top:0;
+    left:0;
+    border-collapse:collapse;
+}
+
+/* style the second level links */
+#navigation ul ul a, #navigation ul ul a:visited {
+    /*background-color:#480000;*/
+    background-image:url(/web/20120210193124im_/http://runehq.com/image/layout/navigation/nav-hover-2.png);
+    background-position:right top;
+    color:#ffffff;
+    height:auto;
+    line-height:1em;
+    padding:5px 10px;
+    width:178px;
+    /*border-width:0 1px 1px 1px;*/
+    border-top: 1px solid #2A0800;
+}
+
+/* yet another hack for IE5.5 */
+* html #navigation ul ul a, * html #navigation ul ul a:visited {
+    width:150px;
+    width:128px;
+}
+
+/* style the third level links */
+#navigation ul ul ul a, #navigation ul ul ul a:visited {
+    /*background-color:#480000;*/
+    background-image:url(/web/20120210193124im_/http://runehq.com/image/layout/navigation/nav-hover-2.png);
+    background-position:right top;
+    color:#ffffff;
+    height:auto;
+    line-height:1em;
+    padding:5px 10px;
+    width:178px;
+    /*border-width:0 1px 1px 1px;*/
+    border-top: 1px solid #2A0800;
+}
+
+/* yet another hack for IE5.5 */
+* html #navigation ul ul ul a, * html #navigation ul ul ul a:visited {
+    width:150px;
+    width:128px;
+}
+
+/* style the fourth level links */
+#navigation ul ul ul ul a, #navigation ul ul ul ul a:visited {
+    /*background-color:#480000;*/
+    background-image:url(/web/20120210193124im_/http://runehq.com/image/layout/navigation/nav-hover-2.png);
+    background-position:right top;
+    color:#ffffff;
+    height:auto;
+    line-height:1em;
+    padding:5px 10px;
+    width:178px;
+    /*border-width:0 1px 1px 1px;*/
+    border-top: 1px solid #2A0800;
+}
+
+/* yet another hack for IE5.5 */
+* html #navigation ul ul ul ul a, * html #navigation ul ul ul ul a:visited {
+    width:150px;
+    width:128px;
+}
+
+/* style the top level hover */
+#navigation a:hover, #navigation ul ul a:hover{
+    color:#ffffff;
+    /*background:#480000;*/
+    background-image:url(/web/20120210193124im_/http://runehq.com/image/layout/navigation/nav-hover.png);
+    background-position:right top;
+}
+
+#navigation a:hover, #navigation :hover > a {
+	border-top-left-radius: 6px;
+	border-top-right-radius: 6px;	
+}
+
+#navigation ul ul a:hover, #navigation ul ul :hover > a {
+	border-top-left-radius: 0px;
+	border-top-right-radius: 0px;	
+}
+
+#navigation :hover > a, #navigation ul ul :hover > a {
+    color:#ffffff;
+    /*background-color:#880000;*/
+    background-image:url(/web/20120210193124im_/http://runehq.com/image/layout/navigation/nav-hover.png);
+    background-position:right top;
+}
+
+/* make the second level visible when hover on first level list OR link */
+#navigation ul li:hover ul,
+#navigation ul a:hover ul{
+    visibility:visible;
+}
+
+/* keep the third level hidden when you hover on first level list OR link */
+#navigation ul :hover ul ul{
+    visibility:hidden;
+}
+
+/* make the third level visible when you hover over second level list OR link */
+#navigation ul :hover ul :hover ul{
+    visibility:visible;
+}
+
+#navigation ul :hover ul :hover ul ul{
+    visibility:hidden;
+}
+
+#navigation ul :hover ul :hover ul :hover ul{
+    visibility:visible;
+}
+ /* This CSS page was submitted by Lilroo503. Thanks to Im4eversmart for corrections and additions.  */ 
+/* css page record ID 00016 version 11 was entered into the database on Mon, Jun 28, 2010,  at 06:53:59 PM by Lilroo503 and was last updated on Thu, Jan 05, 2012,  at 12:09:36 PM by Lilroo503. */ 
+
+/*
+     FILE ARCHIVED ON 19:31:24 Feb 10, 2012 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 20:43:44 Dec 01, 2021.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  captures_list: 116.696
+  exclusion.robots: 0.147
+  exclusion.robots.policy: 0.137
+  RedisCDXSource: 6.557
+  esindex: 0.007
+  LoadShardBlock: 85.618 (3)
+  PetaboxLoader3.datanode: 108.11 (4)
+  CDXLines.iter: 21.319 (3)
+  load_resource: 197.407
+  PetaboxLoader3.resolve: 157.459
+*/

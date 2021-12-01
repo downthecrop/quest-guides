@@ -1,0 +1,1275 @@
+* {
+margin:0;
+padding:0;
+}
+
+@font-face {  
+	  font-family: "Trajan Pro";  
+	  src: url( /web/20120210193124im_/http://runehq.com/css/fonts/TrajanPro-Regular.eot ); /* IE */  
+	  src: local("Trajan Pro"), url( /web/20120210193124im_/http://runehq.com/css/fonts/TrajanPro-Regular.otf ) format("opentype"); /* non-IE */  
+	}  
+	
+@font-face {  
+	  font-family: "Trajan Pro";  
+	  src: url( /web/20120210193124im_/http://runehq.com/css/fonts/TrajanPro-Bold.eot ); /* IE */  
+	  src: local("Trajan Pro Bold"), url( /web/20120210193124im_/http://runehq.com/css/fonts/TrajanPro-Bold.otf ) format("opentype"); /* non-IE */  
+	  font-weight: bold;
+	}  	
+	 
+	.TrajanPro { font-family: "Trajan Pro", verdana, helvetica, sans-serif;  
+	}  
+
+body {
+background-color:#000;
+color:#FFF;
+font-family:Arial, Verdana;
+font-size:12px;
+}
+
+img {
+border:0;
+}
+
+a {
+text-decoration:none;
+}
+
+a:link,a:visited,a:active {
+color:#800;
+}
+
+a:hover {
+color:#B00;
+}
+
+ol, ul {
+margin-bottom:10px;
+margin-left:20px;
+line-height:16px;
+}
+
+ol.padlist {
+margin-bottom:10px;
+margin-left:20px;
+line-height:16px;
+}
+
+ol.padlist li {
+padding-bottom: 16px;
+}
+
+ol.padlist li ul {
+padding-top: 16px;
+padding-bottom: -16px;
+}
+
+ol.padlist li ul li {
+padding: 0 !important;
+}
+
+ol.padlist img {
+padding-top: 16px;
+}
+
+p {
+margin-bottom:10px;
+line-height:16px;
+}
+
+#map-container {
+background-attachment:fixed;
+background-image:url(/web/20120210193124im_/http://runehq.com/image/layout/map.jpg);
+background-position:center top;
+background-repeat:no-repeat;
+min-height:850px;
+}
+
+#scroll-container {
+background-image:url(/web/20120210193124im_/http://runehq.com/image/layout/scroll-slice.jpg);
+background-position:left top;
+background-repeat:repeat-y;
+margin:0 auto;
+min-height:1040px;
+width:1000px;
+}
+
+#scroll-top {
+background-image:url(/web/20120210193124im_/http://runehq.com/image/layout/scroll-top.jpg);
+background-position:left top;
+background-repeat:no-repeat;
+min-height:1040px;
+}
+
+#header {
+background-image:url(/web/20120210193124im_/http://runehq.com/image/layout/wood-header.jpg);
+height:165px;
+margin:0 auto -20px auto;
+width:980px;
+}
+
+.userlinks {
+color: #e2d8c5;
+padding-left: 15px;
+padding-right: 15px;
+padding-top: 5px;
+font-size: 0.9em;
+text-shadow: black 0.1em 0.1em 0.2em;
+clear: left;
+}
+
+.userlinks a {
+color: #e2d8c5;
+text-shadow: black 0.1em 0.1em 0.2em;
+}
+
+.userlinks a:hover {
+color: #fff;
+text-shadow: black 0.1em 0.1em 0.2em;
+}
+
+.userlinkspad {
+padding-left: 4px;
+padding-right: 4px;
+}
+
+#logo {
+float:left;
+height:105px;
+margin-left:20px;
+margin-top:-5px;
+width:180px;
+clear: left;
+}
+
+#ad-top-container {
+position:absolute;
+left:0;
+top:15px;
+}
+
+/*#ad-top-banner {
+margin-right:40px;
+margin-top:13px;
+margin-left:250px
+}*/
+
+#ad-top-banner {
+float:left;
+height:90px;
+margin-left:30px;
+margin-top:-5px;
+width:728px;
+}
+
+#navigation {
+background-image:url(/web/20120210193124im_/http://runehq.com/image/layout/navigation2.png);
+background-position:left top;
+background-repeat:no-repeat;
+height:67px;
+margin:0 auto;
+width:975px;
+}
+
+#announcements {
+background-image:url(/web/20120210193124im_/http://runehq.com/image/layout/announcements.png);
+background-repeat:no-repeat;
+height:323px;
+margin:0 auto;
+position:relative;
+top:-43px;
+width:980px;
+}
+
+#announcements a:link,
+#announcements a:visited,
+#announcements a:active {
+color:#CF9;
+}
+
+#announcements a:hover {
+color:#6C6;
+}
+
+#billboard-container {
+float:left;
+height:215px;
+margin-top:5px;
+margin-right:10px;
+width:585px;
+}
+
+#billboard-container ul {
+list-style-type:none;
+}
+
+#billboard-images {
+height:215px;
+margin-left:0;
+margin-top:5px;
+width:580px;
+}
+
+
+#billboard-nav {
+position:relative;
+top:-25px;
+width:580px;
+z-index:50;
+}
+
+#billboard-nav-list {
+float:right;
+}
+
+#billboard-nav-list li#button_selected {
+background-image:url(/web/20120210193124im_/http://runehq.com/image/layout/billboard-active.png);
+}
+
+#billboard-nav-list li#button_selected:hover {
+background-image:url(/web/20120210193124im_/http://runehq.com/image/layout/billboard-active-hover.png);
+}
+
+#billboard-nav-list li {
+background-image:url(/web/20120210193124im_/http://runehq.com/image/layout/billboard-inactive.png);
+float:left;
+width:15px;
+height:15px;
+}
+
+#billboard-nav-list li:hover {
+background-image:url(/web/20120210193124im_/http://runehq.com/image/layout/billboard-hover.png);
+}
+
+#twitter {
+float:left;
+margin-left:25px;
+margin-top:5px;
+width:335px;
+}
+
+#twitter-accounts {
+font-family:"Trajan Pro";
+font-size:15px;
+font-weight:700;
+margin-top:15px;
+text-align:center;
+}
+
+#twitter-tweets {
+font-size:12px;
+height:150px;
+margin-bottom:5px;
+margin-top:5px;
+}
+
+#twitter-tweets li {
+margin-bottom:5px;
+margin-left:10px;
+}
+
+#updates-container {
+height:95px;
+/*position:relative;
+top:-30px;*/
+}
+
+#forum-topics {
+height:30px;
+padding-left:28px;
+padding-top:7px;
+margin-top:10px;
+}
+
+#forum-topics-scroller {
+list-style-type:none;
+}
+
+/*#forum-topics-scroller li {
+display:none;
+}*/
+
+#site-updates {
+font-family:"Trajan Pro";
+font-size:14px;
+height:45px;
+padding-top:10px;
+}
+
+#last-updated {
+float:left;
+height:43px;
+text-align:center;
+width:253px;
+}
+
+#last-added {
+float:left;
+height:43px;
+text-align:center;
+width:229px;
+}
+
+#newspaper {
+float:left;
+height:43px;
+text-align:center;
+width:262px;
+}
+
+.newspapertitle {
+font-family:"Trajan Pro";
+font-size:25px;
+font-weight:bolder;
+line-height:105%;
+margin-bottom:10px;
+margin-top:5px;
+text-align:center;
+}
+
+#forum-login {
+float:left;
+height:43px;
+text-align:center;
+width:222px;
+}
+
+#column-container {
+margin:15px auto;
+position:relative;
+top:-50px;
+width:980px;
+}
+
+#left-column {
+color:#300;
+float:left;
+text-align:center;
+width:220px;
+}
+
+#poll {
+background-image:url(/web/20120210193124im_/http://runehq.com/image/layout/box-content-body.png);
+background-position:left top;
+background-repeat:repeat;
+border:1px #b29c7c solid;
+padding:4px;
+margin-bottom: 8px;
+}
+
+#poll_old {
+background-image:url(/web/20120210193124im_/http://runehq.com/image/layout/poll-2.png);
+background-position:left top;
+background-repeat:no-repeat;
+color:#300;
+height:276px;
+left:-2px;
+padding-left:30px;
+padding-top:85px;
+position:relative;
+text-align:left;
+top:-4px;
+width:206px;
+}
+
+#poll p {
+margin-bottom:0;
+}
+
+.leftbox, .rightbox {
+background-image:url(/web/20120210193124im_/http://runehq.com/image/layout/box-content-body.png);
+background-position:left top;
+background-repeat:repeat;
+border:1px #b29c7c solid;
+padding:4px;
+margin-bottom: 8px;
+}
+
+#ad-clan {
+border-color:#000;
+border-style:solid;
+border-width:medium;
+}
+
+#main-column-three {
+float:left;
+margin-left:10px;
+width:560px;
+}
+
+#main-column {
+float:left;
+padding-left:10px;
+width:790px;
+}
+#main-column-sitefun {
+float:left;
+padding-left:10px;
+width:960px;
+}
+
+#right-column {
+float:left;
+margin-left:10px;
+text-align:center;
+width:170px;
+}
+
+#scroll-bottom {
+background-image:url(/web/20120210193124im_/http://runehq.com/image/layout/scroll-bottom.jpg);
+background-position:left top;
+background-repeat:no-repeat;
+height:331px;
+padding-top:50px;
+}
+
+#ad-bottom-banner {
+height:90px;
+margin-bottom:50px;
+margin-left:auto;
+margin-right:auto;
+width:728px;
+}
+
+#footer {
+background-image:url(/web/20120210193124im_/http://runehq.com/image/layout/footer.png);
+background-position:left top;
+background-repeat:repeat;
+height:160px;
+margin:0 auto;
+width:960px;
+}
+
+#footer a:link,
+#footer a:visited,
+#footer a:active {
+color:#CF9;
+}
+
+#footer a:hover {
+color:#6C6;
+}
+
+#footer-logo {
+background-image:url(/web/20120210193124im_/http://runehq.com/image/layout/runehq-logo-small.png);
+background-position:left top;
+background-repeat:no-repeat;
+height:101px;
+left:415px;
+position:relative;
+top:-215px;
+width:141px;
+}
+
+#footer-links {
+font-size:14px;
+padding-top:95px;
+text-align:center;
+}
+
+#footer-follow {
+font-size:14px;
+left:840px;
+position:relative;
+top:-50px;
+width:80px;
+}
+
+#footer-copyright {
+font-size:smaller;
+text-align:center;
+}
+
+.content-container-three {
+background-image:url(/web/20120210193124im_/http://runehq.com/image/layout/box-content-body.png);
+background-position:left top;
+background-repeat:repeat;
+border:1px solid #c5ad89;
+margin-bottom:15px;
+width:558px;
+}
+
+.content-header-three {
+background-image:url(/web/20120210193124im_/http://runehq.com/image/layout/box-content-header.jpg);
+background-position:left top;
+background-repeat:no-repeat;
+color:#fec;
+font-family:"Trajan Pro";
+font-size:20px;
+height:32px;
+margin-left:1px;
+padding-left:15px;
+padding-top:10px;
+width:556px;
+text-shadow: 1px 1px 2px #000000;
+}
+
+.content-subheader-three {
+background-color:#480000;
+color:#fec;
+font-size:12px;
+margin-left:1px;
+margin-right:1px;
+padding:2px 5px 2px 5px;
+height: 15px;
+}
+
+.content-body-three {
+color:#300;
+font-size:14px;
+line-height:99%;
+padding:5px 15px 10px;
+}
+
+#content a:link,
+#content a:visited,
+#content a:active {
+color:#800;
+text-decoration:underline;
+}
+
+#content a:hover {
+color:#B00;
+}
+
+.content-container {
+background-image:url(/web/20120210193124im_/http://runehq.com/image/layout/box-content-body.png);
+background-position:left top;
+background-repeat:repeat;
+border:1px solid #c5ad89;
+margin-bottom:15px;
+padding-top:1px;
+width:788px;
+}
+.content-container-sitefun {
+background-image:url(/web/20120210193124im_/http://runehq.com/image/layout/box-content-body.png);
+background-position:left top;
+background-repeat:repeat;
+border:1px solid #c5ad89;
+margin-bottom:15px;
+padding-top:1px;
+width:770px;
+float:left;
+}
+
+.content-header {
+background-image:url(/web/20120210193124im_/http://runehq.com/image/layout/box-content-header.jpg);
+background-position:left top;
+background-repeat:no-repeat;
+color:#fec;
+font-family:"Trajan Pro";
+font-size:20px;
+height:32px;
+margin-left:auto;
+margin-right:auto;
+padding-left:15px;
+padding-top:10px;
+width:556px;
+}
+
+.content-body {
+color:#300;
+font-size:14px;
+line-height:99%;
+padding:5px 15px 10px;
+}
+
+#twitter .twitter-noclick a:link,
+#twitter .twitter-noclick a:visited,
+#twitter .twitter-noclick a:active,
+#twitter .twitter-noclick a:hover {
+color:#A0A0A0;
+cursor:text;
+}
+
+#twitter .twitter-active a:link,
+#twitter .twitter-active a:visited,
+#twitter .twitter-active a:active,
+#twitter .twitter-active a:hover {
+color:#ecffd9;
+cursor:text;
+}
+
+#twitter .twitter-inactive a:link,
+#twitter .twitter-inactive a:visited,
+#twitter .twitter-inactive a:active,
+#twitter .twitter-inactive a:hover {
+color:#A0A0A0;
+}
+
+.smalltext {
+font-family:Arial, Verdana;
+font-size:12px;
+}
+
+.poll_clear {
+clear:both;
+}
+
+.poller {
+/* height:234px; */
+/* width:180px; */
+width: 100%;
+padding-top: 6px;
+}
+
+#poll .pollerTitle {
+font-size:12px;
+font-weight:700;
+line-height:100%;
+margin-bottom:10px;
+margin-top:5px;
+}
+
+.pollerOption {
+font-size:12px;
+padding-bottom:3px;
+text-align:left;
+}
+
+.result_pollerOption {
+font-size:13px;
+padding-bottom:3px;
+text-align:left;
+margin-top:5px;
+}
+
+.result_pollerTitle {
+font-size:13px;
+font-weight:700;
+line-height:100%;
+margin-bottom:5px;
+margin-top:5px;
+}
+
+.result_pollGraph img {
+float:left;
+}
+
+.result_pollGraph div {
+background-repeat:repeat-x;
+color:#FFF;
+float:left;
+font-size:10px;
+height:20px;
+line-height:20px;
+text-align:left;
+padding-top: 1px;
+}
+
+.result_pollGraph {
+height:16px;
+margin-top:-5px;
+}
+
+.poller_waitMessage {
+display:none;
+}
+
+.result_totalVotes {
+clear:both;
+font-size:9px;
+margin-top:10px;
+}
+
+#ad-large-square {
+float:left;
+height:250px;
+width:300px;
+}
+
+.content-intro-container {
+background-image:url(/web/20120210193124im_/http://runehq.com/image/layout/box-content-body.png);
+background-position:left top;
+background-repeat:repeat;
+border:1px solid #c5ad89;
+float:left;
+height:248px;
+margin-bottom:15px;
+margin-left:10px;
+padding-top:1px;
+width:478px;
+}
+
+.content-intro-header {
+background-image:url(/web/20120210193124im_/http://runehq.com/image/layout/box-content-header.jpg);
+background-position:left top;
+background-repeat:no-repeat;
+color:#fec;
+font-family:"Trajan Pro";
+/*font-size:20px;*/
+font-size: 1.75em;
+font-weight:bold;
+height:32px;
+margin-left:1px;
+margin-right:1px;
+padding-left:15px;
+padding-top:7px;
+padding-bottom:5px;
+}
+
+.content-intro-body {
+color:#300;
+font-size:14px;
+line-height:98%;
+padding:5px 15px 10px;
+}
+
+.medheader {
+font-family:"Trajan Pro";
+font-size:22px;
+font-weight:bolder;
+line-height:105%;
+margin-bottom:10px;
+margin-top:5px;
+text-align:center;
+}
+
+.justbold {
+font-weight:700;
+}
+
+.justunderline {
+text-decoration: underline;
+}
+
+.justitalics {
+font-style: italic ;
+}
+
+.center {
+margin-left:auto;
+margin-right:auto;
+text-align:center;
+}
+
+.undersubheader,
+.undersubheader12pt {
+color:#800;
+font-family:"Trajan Pro";
+font-weight:bolder;
+margin-bottom:7px;
+margin-top:10px;
+text-decoration:none;
+}
+
+.undersubheader {
+font-size:18px;
+}
+
+.undersubheader12pt {
+font-size:20px;
+}
+
+.undersubheaderunderlined {
+color:#800;
+font-family:"Trajan Pro";
+font-size:16px;
+font-weight:bolder;
+margin-bottom:7px;
+margin-top:10px;
+text-decoration:underline;
+}
+
+.content-header-small {
+color:#800;
+font-family:"Trajan Pro";
+font-size:16px;
+font-weight:bolder;
+margin-left: -2px;
+margin-bottom:3px;
+margin-top:1px;
+text-decoration:none;
+}
+
+.smallheader {
+color:#800;
+font-family:"Trajan Pro";
+font-size:16px;
+font-weight:bolder;
+margin-bottom:3px;
+margin-top:5px;
+text-decoration:none;
+}
+
+.smallbold {
+font-weight:bold;
+}
+
+#ad-rotating-clans {
+background-image:url(/web/20120210193124im_/http://runehq.com/image/layout/box-content-body.png);
+background-position:left top;
+background-repeat:repeat;
+border:1px #b29c7c solid;
+padding:2px;
+}
+
+.leftboxheader {
+font-family:"Trajan Pro";
+font-size:21px;
+font-weight:bolder;
+line-height:105%;
+margin-bottom:8px;
+margin-top:3px;
+text-align:center;
+color: #330000;
+}
+
+.leftboxheader a, .rightboxheader a {
+color: #330000;
+}
+
+.leftboxheader a:hover, .rightboxheader a:hover {
+color: #770000;
+}
+
+.rightboxheader {
+font-family:"Trajan Pro";
+font-size:21px;
+font-weight:bolder;
+line-height:105%;
+margin-bottom:30px;
+margin-top:3px;
+text-align:center;
+color: #330000;
+}
+
+#awards {
+padding-bottom: 1px;
+}
+
+.pagination {
+color:#000;
+margin-bottom:20px;
+text-align:center;
+}
+
+.sitetblrowdark,
+.smallrow2 {
+background-image:url(/web/20120210193124im_/http://runehq.com/image/layout/table-row-dark.png);
+background-repeat:repeat;
+padding:6px;
+line-height: 16px;
+}
+
+.sitetblrow,
+.smallrow {
+background-image:url(/web/20120210193124im_/http://runehq.com/image/layout/table-row.png);
+background-repeat:repeat;
+padding:6px;
+line-height: 16px;
+}
+
+.sitetblrowdark img {
+vertical-align: middle;
+}
+
+.sitetblrow img{
+vertical-align: middle;
+}
+
+.sitetable {
+border:1px solid #600;
+margin-bottom:10px;
+margin-top:10px;
+}
+
+.sitetablecenter {
+border:1px solid #600;
+margin-bottom:10px;
+margin-left: auto;
+margin-top:10px;
+margin-right: auto;
+}
+
+.sitetablehead,
+.smallhead {
+background-color:#480000;
+background-image:url(/web/20120210193124im_/http://runehq.com/image/layout/table-header.png);
+background-position:right top;
+border:0 none;
+color:#FFF;
+padding:6px;
+text-align:center;
+border-bottom: 2px solid #600;
+}
+
+.sitetablehead a:link,
+.sitetablehead a:visited,
+.sitetablehead a:active {
+color:#FFF;
+}
+
+.sitetablehead a:hover {
+color:#CF9;
+}
+
+.table-center div {
+text-align:center;
+}
+
+.table-center table {
+text-align:left;
+margin-left:auto;
+margin-right:auto;
+}
+
+#fakeiFrame {
+height:600px;
+overflow:scroll;
+width:760px;
+}
+
+#sitefun-right-menu {
+background-image:url(/web/20120210193124im_/http://runehq.com/image/layout/box-content-body.png);
+background-position:left top;
+background-repeat:repeat;
+padding:2px;
+text-align:left;
+}
+
+#sitefun-right-menu ul {
+list-style-type:none;
+margin-left:0;
+padding-left:5px;
+}
+
+#sitefun-right-menu li {
+border-bottom:1px solid #600;
+}
+.square {
+height:6px;
+width:9px;
+background-image:url(/web/20120210193124im_/http://runehq.com/image/layout/square.png);
+background-repeat:no-repeat;
+background-position:center;
+padding-left:2px;
+padding-right:2px;
+vertical-align:middle;
+}
+.guide {
+margin-left:20px;
+margin-bottom:3px;
+line-height:16px;
+}
+.guidecontent {
+padding-top: 10px;
+}
+/* Used in toggle text */
+.togList {
+font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+
+.togList dt {
+cursor: pointer; cursor: hand;
+text-align: center;
+margin-left: auto;
+margin-right: auto;
+}
+
+.togList dt span {
+font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+
+html.isJS .togList dd {
+display: none;
+}
+/* End Used in toggle text */
+
+.italic {
+font-style: italic;
+}
+
+tr.calcRowU td {
+height:25px;
+background-color:#000;
+color:#F00;
+}
+
+tr.calcRowM td {
+height:25px;
+background-color:#000;
+color:#FF0;
+}
+
+tr.calcRowF td {
+height:25px;
+background-color:#000;
+color:#0F0;
+}
+
+#cse-search-box div input {
+width: 154px;
+}
+
+#cse-search-box div input.google_normal {
+width: 60px;
+margin-right: -16px;
+margin-top: 3px;
+}
+
+/* Google Search */
+
+  input.gsc-input {
+    border-color: #b29c7c;
+	width: 154px;
+	padding: 2px; 
+  }
+  input.gsc-search-button {
+    border-color: #666666;
+    background-color: #480000;
+	color: #ffeecc;
+	margin-top: 50px;
+	margin-left: -162px;
+	padding: 2px;
+	margin-bottom: -4px;
+  }
+
+/* Slight reset to make the preview have ample padding. */
+.cse .gsc-control-cse,
+.gsc-control-cse {
+  padding: 2%;
+  width: 96%;
+}
+.cse .gsc-branding,
+.gsc-branding {
+  display: none;
+}
+.cse .gsc-control-cse div,
+.gsc-control-cse div {
+  position: normal;
+}
+/* Selector for entire element. */
+.cse .gsc-control-cse,
+.gsc-control-cse {
+  background-color: #ffffff;
+  border: 1px solid;
+  border-color: #ffffff;
+}
+.cse .gsc-control-cse:after,
+.gsc-control-cse:after {
+  content:".";
+  display:block;
+  height:0;
+  clear:both;
+  visibility:hidden;
+}
+.cse .gsc-resultsHeader,
+.gsc-resultsHeader {
+  border: block;
+}
+/* Search button */
+.cse input.gsc-search-button,
+input.gsc-search-button {
+  font-family: inherit;
+  color: #ffeecc;
+  text-shadow: 0 1px 2px #000000;
+  background-color: #480000;
+  border: 1px outset;
+  border-color: #480000;
+  border-radius: 2px;
+  -moz-border-radius: 2px;
+  -webkit-border-radius: 2px;
+}
+/* Inactive tab */
+.cse .gsc-tabHeader.gsc-tabhInactive,
+.gsc-tabHeader.gsc-tabhInactive {
+  border-bottom: none;
+  color: #666666;
+  background-color: #e9e9e9;
+  border: 1px solid;
+  border-color: #e9e9e9;
+  border-bottom: none;
+}
+/* Active tab */
+.cse .gsc-tabHeader.gsc-tabhActive,
+.gsc-tabHeader.gsc-tabhActive {
+  background-color: #FFFFFF;
+  border: 1px solid;
+  border-top: 2px solid;
+  border-color: #e9e9e9;
+  border-top-color: #FF9900;
+  border-bottom: none;
+}
+/* This is the tab bar bottom border. */
+.cse .gsc-tabsArea,
+.gsc-tabsArea {
+  margin-top: 1em;
+  border-bottom: 1px solid #e9e9e9;
+}
+/* Inner wrapper for a result */
+.cse .gsc-webResult.gsc-result,
+.gsc-webResult.gsc-result,
+.gsc-imageResult-column,
+.gsc-imageResult-classic {
+  padding: .25em;
+  border: 1px solid;
+  border-color: #decbaf;
+  margin-bottom: 1em;
+}
+/* Result hover event styling */
+.cse .gsc-webResult.gsc-result:hover,
+.gsc-webResult.gsc-result:hover,
+.gsc-results .gsc-imageResult-classic:hover,
+.gsc-results .gsc-imageResult-column:hover {
+  border: 1px solid;
+  border-color: #decbaf;
+}
+/*Promotion Settings*/
+/* The entire promo */
+.cse .gs-promotion,
+.gs-promotion {
+  background-color: #decbaf;
+  border: 1px solid;
+  border-color: #336699;
+}
+/* Promotion image */
+.cse .gs-promotion .gs-promotion-image,
+.gs-promotion .gs-promotion-image {}
+/* Promotion links */
+.cse .gs-promotion a.gs-title:link,
+.gs-promotion a.gs-title:link,
+.cse .gs-promotion a.gs-title:link *,
+.gs-promotion a.gs-title:link *,
+.cse .gs-promotion .gs-snippet a:link,
+.gs-promotion .gs-snippet a:link {
+  color: #0000CC;
+}
+.cse .gs-promotion a.gs-title:visited,
+.gs-promotion a.gs-title:visited,
+.cse .gs-promotion a.gs-title:visited *,
+.gs-promotion a.gs-title:visited *,
+.cse .gs-promotion .gs-snippet a:visited,
+.gs-promotion .gs-snippet a:visited {
+  color: #0000CC;
+}
+.cse .gs-promotion a.gs-title:hover,
+.gs-promotion a.gs-title:hover,
+.cse .gs-promotion a.gs-title:hover *,
+.gs-promotion a.gs-title:hover *,
+.cse .gs-promotion .gs-snippet a:hover,
+.gs-promotion .gs-snippet a:hover {
+  color: #0000CC;
+}
+.cse .gs-promotion a.gs-title:active,
+.gs-promotion a.gs-title:active,
+.cse .gs-promotion a.gs-title:active *,
+.gs-promotion a.gs-title:active *,
+.cse .gs-promotion .gs-snippet a:active,
+.gs-promotion .gs-snippet a:active {
+  color: #0000CC;
+}
+/* Promotion snippet */
+.cse .gs-promotion .gs-snippet,
+.gs-promotion .gs-snippet,
+.cse .gs-promotion .gs-title .gs-promotion-title-right,
+.gs-promotion .gs-title .gs-promotion-title-right,
+.cse .gs-promotion .gs-title .gs-promotion-title-right *,
+.gs-promotion .gs-title .gs-promotion-title-right * {
+  color: #000000;
+}
+/* Promotion url */
+.cse .gs-promotion .gs-visibleUrl,
+.gs-promotion .gs-visibleUrl {
+  color: #008000;
+}
+/* Style for auto-completion table
+ * .gsc-completion-selected : styling for a suggested query which the user has moused-over
+ * .gsc-completion-container : styling for the table which contains the completions
+ */
+.gsc-completion-selected {
+  background: #D5E2FF;
+}
+.gsc-completion-container {
+  font-family: Arial, sans-serif;
+  font-size: 13px;
+  position: absolute;
+  background: white;
+  border: 1px solid #666666;
+  margin-left: 0;
+  margin-right: 0;
+  /* The top, left, and width are set in JavaScript. */
+}
+
+/* Full URL */
+.gs-webResult div.gs-visibleUrl-short {
+  display: none;
+}
+.gs-webResult div.gs-visibleUrl-long {
+  display: block;
+}
+.gsc-clear-button {
+  margin-left: -20px !important;
+}
+.gsc-search-box {
+	margin-top: -24px;
+	margin-bottom: 2px;
+}
+#cse-search-form {
+	color: #330000;
+	font-style: italic;
+}
+
+/* Calculator Update */
+
+.calcDataTable .sitetblrow:hover, .calcDataTable .sitetblrowdark:hover {
+	background-color:white;
+}
+
+#calcPercentageBar {
+	clear:both;
+}
+
+#calcBasicSettings {
+	float:left;
+	border-color: black;
+	border-width: 0 1px 1px 0;
+	border-style: solid;
+	width: 300px;
+}
+
+#calcAdvSettings {
+	float:left;
+	border-color: black;
+	border-width: 0 0 1px 1px;
+	border-style: solid;
+	height: 95px;
+	width: 445px;
+	padding-left: 10px;
+	padding-top: 3px;
+}
+
+.calcSetting {
+	margin: 2px 0 2px 2px;
+	height: 30px;
+}
+
+.calcSetting label {
+	display: block;
+	width: 90px;
+	float: left;
+	line-height: 21px;
+}
+ /* This CSS page was submitted by MrStormy. Thanks to Ben, Im4eversmart for corrections and additions.  */ 
+/* css page record ID 00015 version 55 was entered into the database on Mon, Jun 28, 2010,  at 06:01:55 PM by Lilroo503 and was last updated on Thu, Jan 05, 2012,  at 12:10:32 PM by Lilroo503. */ 
+
+/*
+     FILE ARCHIVED ON 19:31:24 Feb 10, 2012 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 20:43:43 Dec 01, 2021.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  captures_list: 158.633
+  exclusion.robots: 0.079
+  exclusion.robots.policy: 0.075
+  cdx.remote: 0.046
+  esindex: 0.008
+  LoadShardBlock: 131.593 (3)
+  PetaboxLoader3.datanode: 81.413 (4)
+  CDXLines.iter: 16.024 (3)
+  PetaboxLoader3.resolve: 93.921 (2)
+  load_resource: 95.447
+*/
