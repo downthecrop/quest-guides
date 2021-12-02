@@ -1,0 +1,40 @@
+#quest_page
+h1{margin-bottom:0px}#quest_page h3
+span{font-size:11px;text-transform:none}#quest_page h3 span
+a{text-decoration:none;font-size:11px}#quest_page h3 span a:hover{text-decoration:underline}#quest_page_small_info{font-size:12px;text-align:center;margin:auto;margin-bottom:10px}#quest_page_small_info
+span{padding:3px
+5px;margin:0
+-2px;color:#76889C}#quest_page_info
+b{text-transform:uppercase;text-decoration:underline}#quest_guide{padding-bottom:10px}#quest_guide>p>b{font-family:'Droid Sans',Arial,sans-serif!important;font-weight:bold!important;color:#fff;text-transform:uppercase;font-size:16px;margin-right:0!important;padding-top:10px;clear:both}#quest_page
+h4{color:#fff;text-transform:uppercase;font-size:16px;padding-top:10px}#quest_guide h2
+i{color:white}#quest_guide
+img{padding:5px;display:block;border:1px
+solid #11161d;background:#1c232c;margin:5px
+auto;box-shadow:0 0 3px #111;-moz-box-shadow:0 0 3px #111;-webkit-box-shadow:0 0 3px #111}#quest_guide
+img.icon{display:inline;vertical-align:middle;-webkit-box-shadow:none;-moz-box-shadow:none;box-shadow:none}#quest_search{margin:15px
+auto 5px auto;display:block;position:relative;width:600px;box-shadow:0 0 5px #111;-moz-box-shadow:0 0 5px #111;-webkit-box-shadow:0 0 5px #111;-o-box-shadow:0 0 5px #111;background:#1C232C;border:1px
+solid #11161D}#quest_list{margin-top:10px}#quest_search
+form{margin:0;padding:5px}#quest_search
+div{width:550px;text-align:center;margin-top:5px}#quest_search div
+select{margin-right:10px}
+/*
+     FILE ARCHIVED ON 15:06:45 Jan 07, 2013 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 22:25:15 Dec 02, 2021.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  captures_list: 273.924
+  exclusion.robots: 0.08
+  exclusion.robots.policy: 0.074
+  RedisCDXSource: 7.419
+  esindex: 0.007
+  LoadShardBlock: 244.836 (3)
+  PetaboxLoader3.datanode: 221.997 (4)
+  CDXLines.iter: 17.559 (3)
+  load_resource: 123.006
+  PetaboxLoader3.resolve: 59.338
+*/
