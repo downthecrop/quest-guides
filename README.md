@@ -1,2 +1,14 @@
-# quest-guides
-mirroring of 2009scape quest guide assets
+# Quest Guides
+
+## GH Mirror for images
+
+https://downthecrop.github.io/quest-guides/quests/witches-house/
+
+ - Download the page and mirror it on GH
+ - Replace image links with the mirror
+ - Open in HTML2Doku Exe
+
+* USE CONTROL + ENTER TO PUT A NEW LINE INTO THE REPLACE BOX
+* If images don't have a new line
+
+Replace }} with }}\n
