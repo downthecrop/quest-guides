@@ -1,0 +1,19 @@
+#quest_page
+h1{margin-bottom:0px}#quest_page h3
+span{font-size:11px;text-transform:none}#quest_page h3 span
+a{text-decoration:none;font-size:11px}#quest_page h3 span a:hover{text-decoration:underline}#quest_page_small_info{font-size:12px;text-align:center;margin:auto;margin-bottom:10px}#quest_page_small_info
+span{padding:3px
+5px;margin:0
+-2px;color:#76889C}#quest_page_info
+b{text-transform:uppercase}#quest_guide{padding-bottom:10px}#quest_guide>p>b{font-family:'Droid Sans',Arial,sans-serif!important;font-weight:bold!important;color:#fff;text-transform:uppercase;font-size:16px;margin-right:0!important;padding-top:10px;clear:both}#quest_page
+h4{color:#fff;text-transform:uppercase;font-size:16px;padding-top:10px}#quest_guide h2
+i{color:white}#quest_guide
+img{padding:5px;display:block;border:1px
+solid #11161d;background:#1c232c;margin:5px
+auto;box-shadow:0 0 3px #111;-moz-box-shadow:0 0 3px #111;-webkit-box-shadow:0 0 3px #111}#quest_guide
+img.icon{display:inline;vertical-align:middle;-webkit-box-shadow:none;-moz-box-shadow:none;box-shadow:none}#alog_msg{font-style:italic}#quest_search{margin:15px
+auto 5px auto;display:block;position:relative;width:600px;box-shadow:0 0 5px #111;-moz-box-shadow:0 0 5px #111;-webkit-box-shadow:0 0 5px #111;-o-box-shadow:0 0 5px #111;background:#1C232C;border:1px
+solid #11161D}#quest_list{margin-top:10px}#quest_search
+form{margin:0;padding:5px}#quest_search
+div{width:550px;text-align:center;margin-top:5px}#quest_search div
+select{margin-right:10px}
